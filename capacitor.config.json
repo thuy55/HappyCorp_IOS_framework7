@@ -1,0 +1,13 @@
+{
+  "appId": "happycorp.booking.com",
+  "appName": "HAPPYCORP",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {}
+}

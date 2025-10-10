@@ -1,0 +1,754 @@
+/* Ghi đè màu nền cho toàn bộ ứng dụng */
+body,
+.app-root,
+.view,
+.page {
+    /* Sử dụng màu xanh tím đậm của bạn */
+    // background-image: url('../image/bg-x.jpg') !important;
+
+    /* 2. Đảm bảo hình ảnh phủ kín toàn bộ khu vực */
+    background-size: cover !important;
+
+    /* 3. Căn giữa hình ảnh */
+    background-position: center center !important;
+
+    /* 4. Ngăn hình ảnh lặp lại */
+    background-repeat: no-repeat !important;
+
+    /* 5. Cố định hình ảnh khi cuộn (tùy chọn) */
+    background-attachment: fixed !important;
+
+    /* 6. Màu nền dự phòng (sẽ hiển thị nếu ảnh không tải được) */
+    background-color: #292489 !important;
+    color: #ffff !important;
+}
+
+.page-content {
+    // background-image: url('../image/bg-x.jpg') !important;
+    background-size: cover !important;
+
+    /* 3. Căn giữa hình ảnh */
+    background-position: center center !important;
+
+    /* 4. Ngăn hình ảnh lặp lại */
+    background-repeat: no-repeat !important;
+
+    /* 5. Cố định hình ảnh khi cuộn (tùy chọn) */
+    background-attachment: fixed !important;
+
+    /* 6. Màu nền dự phòng (sẽ hiển thị nếu ảnh không tải được) */
+    background-color: #292489 !important;
+    color: #ffff !important;
+}
+
+/* --- THANH NAVIGATION BAR --- */
+.navbar-bg {
+    background-color: #292489 !important;
+}
+
+.navbar {
+    color: #ffff !important;
+}
+
+.navbar .link,
+.navbar a.link,
+.navbar .icon,
+.navbar .title {
+    color: #ffff !important;
+}
+
+.toolbar {
+    background-color: #292489 !important;
+    color: #ffff !important;
+    backdrop-filter: none !important;
+}
+
+.toolbar .link,
+.toolbar a.link,
+.toolbar .icon {
+    color: #ffff !important;
+}
+
+.border-image {
+    border-radius: 30px;
+}
+
+.bg-pink {
+    background-color: #fd1678 !important;
+}
+
+.text-pink {
+    color: #fd1678 !important;
+}
+
+.fs-13 {
+    font-size: 13px;
+}
+
+.calendar {
+    height: unset !important;
+}
+
+.badge {
+    height: 12px !important;
+    min-width: 8px !important;
+}
+
+.navbar .title-large-text {
+    font-size: unset !important;
+}
+
+.list .item-content {
+    padding-left: 0 !important;
+}
+
+.list .item-link .item-inner {
+    padding-right: 10px !important;
+}
+
+.list-no-chevron .item-link .item-inner:before {
+    display: none !important;
+    content: none !important;
+}
+
+input,
+select {
+    color: white !important;
+}
+
+.border-input {
+    border: 0.5px solid #1fc5f7 !important;
+    font-size: 14px !important;
+    padding: 0px 12px !important;
+}
+
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.form-check-input {
+    padding: 5px;
+    border-color: #1fc5f7;
+}
+
+.form-check-input:checked {
+    padding: 5px;
+    background-color: #1fc5f7;
+    border-color: #1fc5f7;
+}
+
+.form-check-input:focus {
+    border-color: #1fc5f7;
+    outline: 0;
+    box-shadow: 0 0 0 .1rem rgb(178, 190, 241);
+}
+
+.limited-lines1 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    /* Giới hạn 1 dòng */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    /* Đảm bảo không bị ảnh hưởng */
+    word-break: break-word;
+    /* Ngắt từ nếu quá dài */
+    max-width: 100%;
+    /* Đảm bảo không bị tràn */
+}
+
+.limited-lines2 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    word-break: break-word;
+    max-width: 100%;
+}
+
+
+.tag-khuyenmai {
+    border-radius: 45px 0 45px 0;
+    padding: 3px 10px 3px 10px;
+
+    font-size: 11px;
+    background: linear-gradient(#fd1678, #f0606c, #f86f56);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    letter-spacing: 0.5px;
+    animation: pulseGlow 1.5s infinite
+}
+
+.size-icon {
+    width: 35px;
+    height: 35px;
+}
+
+a {
+    color: inherit !important;
+    text-decoration: none !important;
+
+}
+
+a:hover,
+a:visited,
+a:active {
+    color: inherit;
+}
+
+.bg-pink-nhat {
+    background-color: #1fc5f7 !important;
+}
+
+.video-bg {
+    border-radius: 15px !important;
+}
+
+a.popup-open {
+    all: unset;
+    display: contents;
+}
+
+// Hiệu ứng onClick
+
+// .card:active {
+//     animation: activeEffect 3s forwards;
+// }
+
+@keyframes activeEffect {
+    0% {
+        transform: scale(1);
+        background-color: #f7e3e5 !important;
+        box-shadow: none;
+    }
+
+    10%,
+    90% {
+        transform: scale(1.05);
+        background-color: #f4d9dc;
+        box-shadow: 0 4px 4px rgba(162, 161, 161, 0.2);
+    }
+
+    100% {
+        transform: scale(1);
+        background-color: #f4e6e8 !important;
+        box-shadow: none;
+    }
+}
+
+.hieuung:active {
+    animation: activeEffect 3s forwards;
+}
+
+.hinh-vuong {
+    width: 15px !important;
+    height: 15px !important;
+}
+
+.button {
+    border: 0px !important;
+    text-transform: none !important;
+}
+
+button {
+    border: 0px !important;
+    text-transform: none !important;
+}
+
+//Hiệu ứng chuyển trang
+
+// ...existing code...
+
+/* PageTransition Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+}
+
+@keyframes ripple {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(2);
+        opacity: 0;
+    }
+}
+
+@keyframes progressBar {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+/* PageTransition component styles */
+.page-transition-trigger {
+    position: relative;
+    overflow: hidden;
+}
+
+.page-transition-trigger:hover {
+    transform: scale(1.02) !important;
+}
+
+.page-transition-trigger:active {
+    transform: scale(0.98) !important;
+}
+
+.page-transition-trigger.loading {
+    pointer-events: none;
+}
+
+/* Loading overlay improvements */
+.page-loader-overlay {
+    backdrop-filter: blur(5px) !important;
+    -webkit-backdrop-filter: blur(5px) !important;
+}
+
+/* Spinner customization */
+.spinner-border.text-pink {
+    border-color: #e91e63;
+    border-right-color: transparent;
+}
+
+/* Progress bar */
+.progress {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar.bg-pink {
+    background-color: #e91e63 !important;
+}
+
+// ...existing code...
+
+.border-btn {
+    border: 1px solid #e91e63 !important;
+    background-color: unset !important;
+}
+
+//Menu
+
+// ...existing code...
+
+// Menu accordion styles
+.accordion-item {
+    border-bottom: 1px solid #f1f3f4 !important;
+    margin-bottom: 0 !important;
+}
+
+.accordion-item:last-child {
+    border-bottom: none !important;
+}
+
+.accordion-toggle {
+    background: white !important;
+    border: none !important;
+    padding: 0 !important;
+}
+
+.accordion-toggle-icon {
+    transition: transform 0.3s ease !important;
+}
+
+.accordion-item-opened .accordion-toggle-icon {
+    transform: rotate(180deg) !important;
+}
+
+
+// Menu tab buttons
+.menu-tab-active {
+    background-color: #e91e63 !important;
+    color: white !important;
+    border: none !important;
+}
+
+.menu-tab-inactive {
+    background-color: #f8f9fa !important;
+    color: #e91e63 !important;
+    border: none !important;
+}
+
+// Menu item cards
+.menu-item-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid #f1f3f4 !important;
+}
+
+.menu-item-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+}
+
+.menu-item-image {
+    border-radius: 8px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+
+.fs-14 {
+    font-size: 14px !important;
+}
+
+// ...existing code...
+
+.video-play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: white;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.auto-height-popup .popup {
+    height: auto !important;
+    max-height: 90vh;
+    /* hoặc tuỳ theo mong muốn */
+    top: auto !important;
+    bottom: 0 !important;
+    transform: none !important;
+    border-radius: 20px 20px 0 0;
+    overflow: visible;
+}
+
+.button {
+    border: 0px !important;
+}
+.sheet-modal .toolbar {
+    padding-top: 90px !important;
+    padding-bottom: 0px !important;
+}
+
+.sheet-modal .toolbar .toolbar-inner {
+    position: absolute !important;
+    top: 30px !important;
+
+}
+
+
+.custom-tabbar {
+    --background: var(--ion-footer-background);
+    --color: var(--ion-footer-color);
+    --border: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    height: 80px;
+    padding-bottom: env(safe-area-inset-bottom);
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+    z-index: 1000;
+    contain: none !important;
+}
+
+.tab-selected {
+    position: relative;
+    color: #1fc5f7 !important;
+    transition:
+        color 0.5s ease,
+        background-color 0.5s ease,
+        transform 0.5s ease;
+}
+
+.tab-selected lord-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.tab-selected::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 1px;
+    background-color: #1fc5f7;
+    border-radius: 2px;
+}
+
+.ion-tab-button-custom {
+
+    transition:
+        color 0.5s ease,
+        background-color 0.5s ease,
+        transform 0.5s ease;
+    color: #999999 !important;
+}
+
+.ion-tab-button-custom lord-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.card-expandable {
+    height: 74px !important;
+}
+
+.card-header {
+    background-color: inherit !important;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+
+
+.avatar {
+    margin-left: -67% !important;
+    margin-top: 58% !important;
+}
+
+.list .item-content {
+    margin: 0 !important;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+
+}
+
+.segmented .button {
+    background-color: rgb(238, 238, 238) !important;
+    box-shadow: 0 !important;
+}
+
+.segmented .button-active {
+    background-color: #fd1678 !important;
+    box-shadow: 0 !important;
+    color: white !important;
+}
+
+.fs-11 {
+    font-size: 11px;
+}
+
+// ...existing code...
+
+/* Fix header position */
+.navbar {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 5000 !important;
+}
+
+/* Fix page content để không bị che bởi navbar */
+.page-content {
+    // padding-top: var(--f7-navbar-height) !important;
+
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+}
+
+// .sheet .page-content {
+
+// }
+// .page:not(.sheet-modal) .page-content {
+//     padding-top: var(--f7-navbar-height) !important;
+// }
+
+/* còn trong sheet thì bỏ */
+.sheet-modal .page-content {
+    padding-top: 0 !important;
+}
+
+/* Fix cho iOS safe area */
+.ios .navbar {
+    padding-top: env(safe-area-inset-top) !important;
+}
+
+/* Fix cho Android statusbar */
+.android .navbar {
+    margin-top: var(--f7-statusbar-height, 0) !important;
+}
+
+/* Đảm bảo views không bị overlap */
+.views {
+    padding-top: 0 !important;
+}
+
+.fs-15 {
+    font-size: 15px !important;
+}
+
+.card-backdrop {
+    background-color: transparent !important;
+    backdrop-filter: none !important;
+}
+
+.bg-pink1 {
+    background-color: #f166b5;
+}
+
+/* sáng (mặc định) */
+.sheet-modal-bottom,
+.sheet-modal:not(.sheet-modal-top) {
+    background-color: var(--f7-theme-color-light, #f8f9fa);
+    /* bg-light */
+    color: #000;
+}
+
+/* tối */
+.dark .sheet-modal-bottom,
+.dark .sheet-modal:not(.sheet-modal-top) {
+    background-color: var(--f7-theme-color-dark, #212529);
+    /* bg-dark */
+    color: #fff;
+}
+
+.nav-link {
+    color: white !important;
+    /* chữ đen khi không active */
+}
+
+.dark .nav-link {
+    color: #fff !important;
+}
+
+.nav-link.active {
+    background-color: #f30771 !important;
+    color: #fff !important;
+}
+
+.bg-social {
+    background-color: #26225c;
+}
+
+.dark .bg-social {
+    background-color: #212529;
+}
+
+.color-icon {
+    color: black;
+}
+
+.dark .color-icon {
+    color: white;
+}
+
+
+
+.text-color {
+    color: #1f1f1f;
+}
+
+.dark .text-color {
+    color: #bebebe;
+}
+
+.bg-date {
+    background-color: #fff;
+}
+
+.dark .bg-date {
+    background-color: #000;
+}
+
+.bg-input {
+    background-color: #e9e9e9 !important;
+    // padding: 10px;
+}
+
+.dark .bg-input {
+    background-color: #313131 !important;
+    padding: 5px !important;
+    font-size: 13px !important;
+}
+
+
+.demo-sheet-brand {
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    translate: -50% -50%;
+    width: 400px !important;
+    max-width: 80% !important;
+    height: auto !important;
+    /* modal co giãn */
+    max-height: 70vh !important;
+    /* giới hạn chiều cao */
+    background-color: transparent;
+    background-color: unset !important;
+    border-radius: 15px !important;
+    // overflow: hidden;
+    //  background-image: url('../image/bg-x.jpg') !important;
+    /* tránh tràn nội dung */
+}
+
+.demo-sheet-brand .sheet-modal-inner {
+    display: block !important;
+    /* bỏ flex mặc định */
+    background: transparent !important;
+    height: auto !important;
+    max-height: 80vh;
+}
+
+.demo-sheet-brand .page {
+    height: auto !important;
+}
+
+.demo-sheet-brand .page-content {
+    height: auto !important;
+    max-height: 70vh;
+    overflow-y: auto !important;
+    border-radius: 15px !important;
+    padding-bottom: 10px;
+
+}
+
+.card {
+    background-color: #302b8f;
+}
+
+.text-xanh {
+    color: #1fc5f7 !important;
+}
+
+.select-white-text {
+    /* Đặt màu chữ MẶC ĐỊNH của ô select là TRẮNG */
+    color: white !important;
+
+    /* Hoặc màu nền của bạn */
+}
+
+/* Quan trọng: Đặt màu chữ của TẤT CẢ các option là ĐEN */
+.select-white-text option {
+    color: black !important;
+    /* Đặt nền option là trắng để text đen hiện lên rõ */
+    background-color: white !important;
+}

@@ -1,0 +1,25 @@
+{
+  "cwd": "C:\\Users\\ECLO\\Desktop\\HAPPYCORP\\HAPPYCORP_Framework7",
+  "type": [
+    "capacitor"
+  ],
+  "name": "HAPPYCORP_7",
+  "framework": "react",
+  "template": "tabs",
+  "bundler": "vite",
+  "cssPreProcessor": "less",
+  "theming": {
+    "customColor": false,
+    "color": "#007aff",
+    "darkMode": false,
+    "iconFonts": true
+  },
+  "customBuild": false,
+  "pkg": "io.framework7.myapp",
+  "capacitor": {
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  }
+}
