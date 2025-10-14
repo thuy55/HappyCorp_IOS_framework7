@@ -66,7 +66,7 @@ export default function SheetBrand({ opened, onClose }) {
     return (
         <>
             <Sheet
-                className="demo-sheet-brand "
+                className="demo-sheet-brand h-auto"
                 opened={opened}
                 onSheetClosed={onClose}
                 swipeToClose
@@ -85,11 +85,11 @@ export default function SheetBrand({ opened, onClose }) {
                         {brand && brand.map((brand, key) => {
                             return (
                                 <>
-                                    <div className={`d-flex align-items-center mt-2 p-2 rounded ${brandId == brand.id ? "bg-danger bg-opacity-25 text-white" : ""}`} onClick={() => { onClickBrand(brand.id, brand.name) }}>
+                                    <div className={`d-flex align-items-center mt-2 p-2 rounded ${brandId == brand.id ? "bg-primary bg-opacity-25 text-white" : ""}`} onClick={() => { onClickBrand(brand.id, brand.name) }}>
                                         <lord-icon
                                             src="https://cdn.lordicon.com/lbcxnxti.json"
                                             trigger="loop"
-                                            colors="primary:#f30771,secondary:#f30771"
+                                            colors="primary:#1fc5f7,secondary:#1fc5f7"
                                             className=' me-2'
                                             style={{ width: '30px', height: '30px' }}>
                                         </lord-icon>

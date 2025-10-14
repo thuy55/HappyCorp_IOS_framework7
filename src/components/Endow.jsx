@@ -11,11 +11,16 @@ export default function SheetEndow({ opened, onClose }) {
                 onSheetClosed={onClose}
             >
                 <Toolbar className="border border-0">
-                    <div className="left fw-bold d-flex align-items-center">
+                    <div className="left fw-bold d-flex align-items-center mb-3">
+                        <button
+                            className="rounded-circle border-0 bg-light  me-3 d-flex justify-content-center p-1"
+                            style={{ width: "25px", height: "25px", lineHeight: "25px" }}
+                            onClick={() => f7.sheet.close()}
+                        >
+                            <Icon f7="arrow_left" size='15px' className="icon-dark"></Icon>
+
+                        </button>
                         Ưu đãi
-                    </div>
-                    <div className="right fs-13">
-                        <Link sheetClose>Close</Link>
                     </div>
                 </Toolbar>
                 <PageContent className="pb-5">

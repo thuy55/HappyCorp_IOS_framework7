@@ -288,13 +288,16 @@ export default function SheetBooking1({ opened, onClose }) {
                 onSheetClosed={onClose}
             >
                 <Toolbar className="">
-                    <div className="left fw-bold d-flex align-items-center">
-                        <Link sheetClose>
-                            <img src='../img/backward.gif' className='size-icon me-1'></img>
-                        </Link>
-                        Tạo đơn
-                    </div>
-                    <div className="right">
+                    <div className="left fw-bold d-flex align-items-center mb-3">
+                        <button
+                            className="rounded-circle border-0 bg-light  me-3 d-flex justify-content-center p-1"
+                            style={{ width: "25px", height: "25px", lineHeight: "25px" }}
+                            onClick={() => f7.sheet.close()}
+                        >
+                            <Icon f7="arrow_left" size='15px' className="icon-dark"></Icon>
+
+                        </button>
+                        Tạo đơn đặt phòng
                     </div>
                 </Toolbar>
                 <PageContent className="pb-5">

@@ -661,7 +661,7 @@ const HomePage = () => {
           {history && history.map((history, key) => {
             return (
               <>
-                <ListItem onClick={() => { setSheetOpenedInvoices(true); localStorage.setItem("HappyCorp_id_invoices", history.active) }} className='row mt-2 list-no-chevron'>
+                <ListItem onClick={() => { setSheetOpenedInvoices(true); localStorage.setItem("HappyCorp_id_invoices", history.active) }} className='row mt-2'>
                   <div className='col-2'>
                     <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlyd6LH2s0z9gH9I33pj9ZTUzbO_GEv5fCPQ&s' className='w-100 border border-2 rounded-3 border-danger'></img>
                   </div>

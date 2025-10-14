@@ -69,12 +69,17 @@ export default function SheetInvoices({ opened, onClose }) {
                 onSheetClosed={onClose}
             >
                 <Toolbar className="">
-                    <div className="left fw-bold d-flex align-items-center">
+                    
+                    <div className="left fw-bold d-flex align-items-center mb-3">
+                        <button
+                            className="rounded-circle border-0 bg-light  me-3 d-flex justify-content-center p-1"
+                            style={{ width: "25px", height: "25px", lineHeight: "25px" }}
+                            onClick={() => f7.sheet.close()}
+                        >
+                            <Icon f7="arrow_left" size='15px' className="icon-dark"></Icon>
 
+                        </button>
                         Hóa đơn #{invoices && invoices.code}
-                    </div>
-                    <div className="right fs-13">
-                        <Link onClick={() => { handleCloseAllModals() }}>Close</Link>
                     </div>
                 </Toolbar>
                 <PageContent >
@@ -170,7 +175,7 @@ export default function SheetInvoices({ opened, onClose }) {
                         <div className=" fs-13 text-pink mb-2 fw-bold">
                             Thông tin thanh toán
                         </div>
-                         <div className='d-flex justify-content-between align-items-center text-success fw-bold p-2'>
+                        <div className='d-flex justify-content-between align-items-center text-success fw-bold p-2'>
                             {/* Tổng tiền hàng ban đầu (trước giảm trừ, phí) */}
                             <div>Tổng tiền hàng:</div>
                             <div>{pay && formatCurrency(pay.total)}</div>

@@ -64,13 +64,16 @@ export default function SheetEventDetail({ opened, onClose }) {
                             alt="karaoke"
                         />
                         {/* nút đóng */}
-                        <button
-                            className="rounded-circle border-0 bg-light position-absolute top-50 end-0 m-2 d-flex justify-content-center"
-                            style={{ width: "30px", height: "30px", lineHeight: "30px" }}
-                            onClick={() => f7.sheet.close()}
-                        >
-                            ✕
-                        </button>
+                        <div className="p-60 position-absolute top-0 start-0">
+                            <button
+                                className="rounded-circle border-0 bg-light  m-2 d-flex justify-content-center p-2"
+                                style={{ width: "30px", height: "30px", lineHeight: "30px", marginTop: '50px !important' }}
+                                onClick={() => f7.sheet.close()}
+                            >
+                                    <Icon f7="arrow_left" size='15px' color='black' ></Icon>
+                        
+                            </button>
+                        </div>
                     </div>
 
 
@@ -112,9 +115,7 @@ export default function SheetEventDetail({ opened, onClose }) {
                             </div>
 
                         </Card>
-                        <div className="d-flex justify-content-end px-3">
-                            <Button sheetClose className="bg-secondary bg-opacity-25 p-3 rounded-pill text-white fs-15" >Đóng</Button>
-                        </div>
+                       
                     </List>
 
 

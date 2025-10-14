@@ -183,19 +183,16 @@ export default function SheetBookingMenu({ opened, onClose }) {
                 onSheetClosed={onClose}
             >
                 <Toolbar className="">
-                    <div className="left fw-bold d-flex align-items-center">
-                        <Link sheetClose>
-                            <img src='../img/backward.gif' className='size-icon me-1' alt="Back"></img>
-                        </Link>
-                        Chọn menu
-                    </div>
-                    <div className="right">
-                        {/* Hiển thị tổng số loại món đã chọn */}
-                        {numberOfUniqueItems > 0 && (
-                            <Button fill round className="bg-pink text-white" onClick={() => f7.dialog.alert('Bạn đã chọn: ' + numberOfUniqueItems + ' loại món.', 'Thông báo')}>
-                                Đã chọn ({numberOfUniqueItems})
-                            </Button>
-                        )}
+                    <div className="left fw-bold d-flex align-items-center mb-3">
+                        <button
+                            className="rounded-circle border-0 bg-light  me-3 d-flex justify-content-center p-1"
+                            style={{ width: "25px", height: "25px", lineHeight: "25px" }}
+                            onClick={() => f7.sheet.close()}
+                        >
+                            <Icon f7="arrow_left" size='15px' className="icon-dark"></Icon>
+
+                        </button>
+                        Chọn món
                     </div>
                 </Toolbar>
                 <PageContent>
@@ -296,10 +293,8 @@ export default function SheetBookingMenu({ opened, onClose }) {
                                                                                 {item.name}
                                                                             </h6>
                                                                             <p className="fw fs-13">
-                                                                                {formatPrice(item.price)}
-                                                                                {item.price > 0 && (
-                                                                                    <span className="fs-12 text-muted"> đ</span>
-                                                                                )}
+                                                                                {formatPrice(item.price)} <span className="fs-12 text-white"> đ</span>
+                                                                               
                                                                             </p>
                                                                         </div>
                                                                     </div>

@@ -134,8 +134,8 @@ function chuyentrang(e){
         f7.tab.show('#view-home');
       } else if (e === 'account') {
         f7.tab.show('#view-account');
-      } else if (e === 'chat') {
-        f7.tab.show('#view-chat');
+      } else if (e === 'menu') {
+        f7.tab.show('#view-menu');
       } else if (e === 'history') {
         f7.tab.show('#view-history');
       } else if (e === 'social') {
@@ -296,10 +296,10 @@ function Logout() {
       <Panel left cover>
         <View>
           <Page>
-            <Navbar>
-              {/* <div className=' py-2'> */}
+            <Navbar className="custom-navbar">
+              <div className='text-center pb-1'>
               <img src='../image/happy-corp-logo.png' className='w-25'></img>
-              {/* </div> */}
+              </div>
             </Navbar>
 
 
@@ -410,12 +410,12 @@ function Logout() {
               <button className='p-2 rounded-pill bg-pink fs-13 border border-0 text-white fw-bold' onClick={()=>{Logout()}}>Đăng xuất</button>
             </div>
             <div className='fixed-bottom '>
-              <Card className="bg-pink-nhat border border-0 bg-danger m-0 rounded-0 fs-13 p-3 py-4">
+              <Card className=" border border-0 bg-danger m-0 rounded-0 fs-13 p-3  text-dark" style={{backgroundImage: 'url(../image/nen.png)', backgroundSize: 'cover', backgroundPosition: 'center'}}>
            
-                <div>
+                {/* <div>
                   <img src='../image/happy-corp-logo.png' className='w-25' />
-                </div>
-                <div className='mt-2'>
+                </div> */}
+                <div className=''>
                   <lord-icon
                     src="https://cdn.lordicon.com/onmwuuox.json"
                     trigger="loop"
@@ -425,7 +425,7 @@ function Logout() {
                   </lord-icon>
                   Tòa nhà International Plaza, 343 Phạm Ngũ Lão, Phường Bến Thành, Quận 1, Hồ Chí Minh
                 </div>
-                <div className='mt-1 d-flex align-items-center'>
+                <div className='mt-2 d-flex align-items-center'>
                   <lord-icon
                     src="https://cdn.lordicon.com/pmivedvy.json"
                     trigger="loop"
@@ -433,6 +433,7 @@ function Logout() {
                     className=' me-1'
                     style={{ width: '20px', height: '20px' }}>
                   </lord-icon>
+                  1900 633 988
                 </div>
                 <div className='mt-4'>
               

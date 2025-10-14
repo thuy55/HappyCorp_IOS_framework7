@@ -293,7 +293,7 @@ export default function SheetRevenue({ opened, onClose }) {
                                     onClick={() => { handlePeriodChange('date'); historyDate }}
                                 >
                                     <Icon f7="calendar" className="me-2" size="16px"></Icon>
-                                    Date
+                                    Ngày
                                 </Button>
                             </div>
                             <div className="col-4">
@@ -305,7 +305,7 @@ export default function SheetRevenue({ opened, onClose }) {
                                     onClick={() => { handlePeriodChange('week'); historyWeek }}
                                 >
                                     <Icon f7="calendar" className="me-2" size="16px"></Icon>
-                                    Week
+                                    Tuần
                                 </Button>
                             </div>
                             <div className="col-4">
@@ -317,7 +317,7 @@ export default function SheetRevenue({ opened, onClose }) {
                                     onClick={() => { handlePeriodChange('month'); historyMonth() }}
                                 >
                                     <Icon f7="calendar" className="me-2" size="16px"></Icon>
-                                    Month
+                                    Tháng
                                 </Button>
                             </div>
                         </div>
@@ -439,25 +439,25 @@ export default function SheetRevenue({ opened, onClose }) {
                     {/* Statistics Cards */}
                     <div className="row mx-2 g-3 mb-4 mt-2">
                         <div className="col-4 p-1">
-                            <Card className="text-center m-1 p-3 border-0 shadow-none text-pink">
+                            <Card className="text-center m-1 p-3 px-1 border-0 shadow-none text-pink">
                                 <div
                                     className="display-4 fw-bold mb-1"
                                 >
                                     0
                                 </div>
-                                <div className='fs-13'>Total </div>
+                                <div className='fs-13'>Tổng </div>
                             </Card>
                         </div>
                         <div className="col-4 p-1">
-                            <Card className="text-center m-1 p-3 border-0 shadow-none  text-success">
+                            <Card className="text-center m-1 p-3 px-1 border-0 shadow-none  text-success">
                                 <div className="display-4 fw-bold mb-1">0</div>
-                                <div className='fs-13'>Paid</div>
+                                <div className='fs-13'>Đã thanh toán</div>
                             </Card>
                         </div>
                         <div className="col-4 p-1">
-                            <Card className="text-center m-1 p-3 border-0 shadow-none text-secondary">
+                            <Card className="text-center m-1 p-3 px-1 border-0 shadow-none text-secondary">
                                 <div className="display-4 fw-bold  mb-1">0</div>
-                                <div className='fs-13'>Cancelled</div>
+                                <div className='fs-13'>Đã huỷ</div>
                             </Card>
                         </div>
                     </div>
@@ -493,7 +493,7 @@ export default function SheetRevenue({ opened, onClose }) {
                         {invoices.length > 0 ? invoices.map((invoice) => {
                             return (
                                 <>
-                                    <ListItem onClick={() => { setSheetOpened1(true); localStorage.setItem("HappyCorp_id_invoices", invoice.active) }} className='row mt-2 list-no-chevron'>
+                                    <ListItem onClick={() => { setSheetOpened1(true); localStorage.setItem("HappyCorp_id_invoices", invoice.active) }} className='row mt-2'>
                                         <div className='col-2'>
                                             <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlyd6LH2s0z9gH9I33pj9ZTUzbO_GEv5fCPQ&s' className='w-100 border border-2 rounded-3 border-danger'></img>
                                         </div>

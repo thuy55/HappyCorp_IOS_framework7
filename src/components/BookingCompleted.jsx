@@ -72,12 +72,13 @@ export default function SheetBookingCompleted({ opened, onClose }) {
                 onSheetClosed={onClose}
             >
                 <Toolbar className="">
+                    
                     <div className="left fw-bold d-flex align-items-center">
 
                         Hóa đơn #{invoices && invoices.code}
                     </div>
                     <div className="right fs-13">
-                        <Link onClick={() => { handleCloseAllModals() }}>Close</Link>
+                        <Link onClick={() => { handleCloseAllModals() }}>Đóng</Link>
                     </div>
                 </Toolbar>
                 <PageContent >

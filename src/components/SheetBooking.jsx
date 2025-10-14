@@ -1,4 +1,4 @@
-import { Sheet, Toolbar, PageContent, Block, Link, Button, Card, BlockTitle, List } from "framework7-react";
+import { Sheet, Toolbar, PageContent, Block, Link, Button, Card, BlockTitle, List, Icon, f7 } from "framework7-react";
 import SheetBooking1 from "./SheetBooking1";
 import { useEffect, useState } from "react";
 import SheetBookingMenu from "./SheetBookingMenu";
@@ -52,10 +52,17 @@ export default function SheetBooking({ opened, onClose }) {
             onSheetClosed={onClose}
         >
             <Toolbar className="px-3 text-pink">
-                <div className="left fw-bold fst-italic ">Sơ đồ phòng</div>
-                <div className="right">
-                    <Link sheetClose className="fs-13">Close</Link>
-                </div>
+                <div className="left fw-bold d-flex align-items-center mb-3">
+                        <button
+                            className="rounded-circle border-0 bg-light  me-3 d-flex justify-content-center p-1"
+                            style={{ width: "25px", height: "25px", lineHeight: "25px" }}
+                            onClick={() => f7.sheet.close()}
+                        >
+                            <Icon f7="arrow_left" size='15px' className="icon-dark"></Icon>
+
+                        </button>
+                        Sơ đồ phòng
+                    </div>
             </Toolbar>
 
             <PageContent className="px-3 fs-13 pb-4" >

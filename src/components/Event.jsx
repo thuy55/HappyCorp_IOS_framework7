@@ -42,7 +42,7 @@ export default function SheetEvent({ opened, onClose }) {
         localStorage.setItem("HappyCorp_Event_id", e)
         console.log(123);
         setSheetOpened1(true);
-        
+
     }
 
     return (
@@ -53,12 +53,20 @@ export default function SheetEvent({ opened, onClose }) {
                 onSheetClosed={onClose}
             >
                 <Toolbar className="">
-                    <div className="left fw-bold d-flex align-items-center">
+                    <div className="left fw-bold d-flex align-items-center mb-3">
+                        <button
+                            className="rounded-circle border-0 bg-light  me-3 d-flex justify-content-center p-1"
+                            style={{ width: "25px", height: "25px", lineHeight: "25px" }}
+                            onClick={() => f7.sheet.close()}
+                        >
+                            <Icon f7="arrow_left" size='15px' className="icon-dark"></Icon>
+
+                        </button>
                         Sự kiện
                     </div>
-                    <div className="right fs-13">
+                    {/* <div className="right fs-13">
                         <Link sheetClose>Close</Link>
-                    </div>
+                    </div> */}
                 </Toolbar>
                 <PageContent className="pb-5">
 
@@ -66,12 +74,12 @@ export default function SheetEvent({ opened, onClose }) {
                     {/* <div className="row w-100"> */}
 
                     <div className=' position-relative'>
-                        <img src="https://img.pikbest.com/backgrounds/20250720/deep-blue-background-with-glowing-swirling-lines-and-filaments-of-light-purple_11798696.jpg!f305cw" className=' rounded-bottom-4 w-100' style={{ height: '200px', objectFit: 'cover' }}></img>
+                        <img src="../image/image-event.png" className='  w-100' style={{  objectFit: 'cover' }}></img>
 
-                        <div className='position-absolute top-0 end-0 m-3'>
-                            <img src='../image/happy-corp-logo.png' style={{ height: "50px" }}></img>
+                        <div className='position-absolute top-0 end-0 m-2'>
+                            <img src='../image/happy-corp-logo.png' style={{ height: "30px" }}></img>
                         </div>
-                        <div className='position-absolute bottom-0 start-0 m-3 mt-0 fs-15 fw-bold fst-italic' style={{color:"#ff9700"}}>
+                        <div className='position-absolute bottom-0 start-0 m-3 mt-0 fs-15 fw-bold fst-italic' style={{ color: "#ff9700" }}>
                             <div className="mb-2"> Where style meets nightlife</div>
 
                             Thưởng thức từng giọt – Sống trọn từng đêm

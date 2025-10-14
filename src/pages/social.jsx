@@ -36,7 +36,7 @@ const SocialPage = () => {
     const [sheetOpenComment, setSheetOpenComment] = useState(false);
     const [sheetOpenedDeleteSocial, setSheetOpenedDeleteSocial] = useState(false);
     const [sheetOpenedAdd, setSheetOpenedAdd] = useState(false);
-  
+
     // const [images, setImages] = useState([]);
 
     // const [addimage, setaddimage] = useState([]);
@@ -973,7 +973,7 @@ const SocialPage = () => {
 
                 {/* Page content */}
                 <div className='pb-2 pt-0 bg-social'>
-                    <Card className='m-0 p-3 pb-2 rounded-0 border border-0' style={{backgroundColor:"#292489"}}>
+                    <Card className='m-0 p-3 pb-2 rounded-0 border border-0' style={{ backgroundColor: "#292489" }}>
                         <div className='row d-flex align-items-center'>
                             <div className='col-8'>
                                 <div className='d-flex align-items-center'>
@@ -998,7 +998,7 @@ const SocialPage = () => {
                             </div>
                         </div>
                     </Card>
-                    <Card className='m-0 mt-1 p-0 rounded-0 border border-0' style={{backgroundColor:"#292489"}}>
+                    <Card className='m-0 mt-1 p-0 rounded-0 border border-0' style={{ backgroundColor: "#292489" }}>
                         <div className='d-flex align-items-center justify-content-between p-3 pb-1'>
                             <div className='d-flex align-items-center'>
                                 <img src="https://www.in.pro.vn/wp-content/uploads/2025/01/avatar-nu-diu-dang.webp" onClick={() => { profile_social(socials.account.uid) }} className='rounded-circle' style={{ width: "40px", height: "40px" }}></img>
@@ -1086,7 +1086,7 @@ const SocialPage = () => {
 
 
                     </Card>
-                    <Card className='m-0 mt-1 p-0 rounded-0 border border-0' style={{backgroundColor:"#292489"}}>
+                    <Card className='m-0 mt-1 p-0 rounded-0 border border-0' style={{ backgroundColor: "#292489" }}>
                         <div className='d-flex align-items-center justify-content-between p-3 pb-1'>
                             <div className='d-flex align-items-center'>
                                 <img src="https://www.in.pro.vn/wp-content/uploads/2025/01/avatar-nu-diu-dang.webp" onClick={() => { profile_social(socials.account.uid) }} className='rounded-circle' style={{ width: "40px", height: "40px" }}></img>
@@ -1335,8 +1335,8 @@ const SocialPage = () => {
             </Popup>
 
             {/* menu-social */}
-            <Popover className="popover-menu-social " style={{ width: "250px" }}>
-                <List className='px-3'>
+            <Popover className="popover-menu-social" style={{ width: "200px", backgroundColor: "rgb(16 14 70)" }}>
+                <List className='px-3 text-white'>
                     <ListItem >
                         <Link className='d-flex align-items-center fs-14  fw-bold' href="/profile/" data-view=".view-main" popoverClose >
                             <img src="https://www.in.pro.vn/wp-content/uploads/2025/01/avatar-nu-diu-dang.webp" className='rounded-circle me-2' style={{ width: "40px", height: "40px" }}></img>
@@ -1350,12 +1350,12 @@ const SocialPage = () => {
                                 trigger="loop"
                                 colors="primary:#1fc5f7,secondary:#1fc5f7"
                                 className=' me-2'
-                                style={{ width: '30px', height: '30px' }}>
+                                style={{ width: '20px', height: '20px' }}>
                             </lord-icon>
-                            {t("feed")}
+                            Bảng tin
                         </Link>
                     </ListItem>
-                    <ListItem >
+                    {/* <ListItem >
                         <Link className='d-flex align-items-center fs-14 ' href="/chat-explore/" data-view=".view-main" popoverClose >
                             <lord-icon
                                 src="https://cdn.lordicon.com/rrbmabsx.json"
@@ -1364,9 +1364,9 @@ const SocialPage = () => {
                                 className=' me-2'
                                 style={{ width: '30px', height: '30px' }}>
                             </lord-icon>
-                            {t("explore")}
+                            Khám phá
                         </Link>
-                    </ListItem>
+                    </ListItem> */}
                     <ListItem  >
                         <Link className='d-flex align-items-center fs-14 ' href="/social-follower/" data-view=".view-main" popoverClose >
                             <lord-icon
@@ -1376,7 +1376,7 @@ const SocialPage = () => {
                                 className=' me-2'
                                 style={{ width: '20px', height: '20px' }}>
                             </lord-icon>
-                            {t("friends")}
+                            Bạn bè
                         </Link>
                     </ListItem>
                     <ListItem >
@@ -1388,7 +1388,7 @@ const SocialPage = () => {
                                 className=' me-2'
                                 style={{ width: '20px', height: '20px' }}>
                             </lord-icon>
-                            {t("saved")}
+                            Đã lưu
                         </PageTransition>
                     </ListItem>
                     <ListItem  >
@@ -1400,15 +1400,15 @@ const SocialPage = () => {
                                 className=' me-2'
                                 style={{ width: '20px', height: '20px' }}>
                             </lord-icon>
-                            {t("hidden")}
+                            Đã ẩn
                         </PageTransition>
                     </ListItem>
                 </List>
             </Popover>
 
             {/* menu từng social */}
-            <Popover className="popover-menu " style={{ width: "200px" }}>
-                <List className='px-3'>
+            <Popover className="popover-menu " style={{ width: "200px", backgroundColor: "rgb(16 14 70)" }}>
+                <List className='px-2'>
                     {/* {uid_account == selectuidSocial && */}
                     <ListItem >
                         <Link className='d-flex align-items-center fs-14 ' onClick={() => { social_id(selectActive) }} fill sheetOpen=".edit-social-sheet" popoverClose >
@@ -1521,18 +1521,33 @@ const SocialPage = () => {
                                 </div>
                                 <div className='col-10 ps-0 '>
                                     <div className='fs-15 fw-bold'>Nguyễn Thị Thanh Thúy</div>
-                                    <div className='fs-13 mt-2 fw-bold'>
-                                        <span className='text-primary p-1 px-2 rounded-2 bg-primary bg-opacity-25 me-1'>Bạn bè</span> <span className='text-primary p-1 px-2 rounded-2 bg-primary bg-opacity-25 me-1'>Trải nghiệm</span>
+                                    <div className='fs-11 mt-2 fw-bold'>
+                                        <span
+                                            className="text-white p-1 px-2 rounded-2 bg-opacity-25 me-1"
+                                            style={{
+                                                background: "linear-gradient(90deg, #7fc5f7, #93a1dfff, #cf8bf3)"
+                                            }}
+                                        >
+                                            Bạn bè
+                                        </span>
+                                        <span
+                                            className="text-white p-1 px-2 rounded-2 bg-opacity-25 me-1"
+                                            style={{
+                                                background: "linear-gradient(90deg, #7fc5f7, #93a1dfff, #cf8bf3)"
+                                            }}
+                                        >
+                                            Trãi nghiệm
+                                        </span>
                                     </div>
                                 </div>
                             </div>
                             <div className='px-2 mt-3'>
-                                <textarea rows={5} className=' rounded-3 fs-13 px-2  mb-3' placeholder="Hãy nêu cảm nghĩ của bạn" onChange={(e) => setContentAdd(e.target.value)}></textarea>
+                                <textarea rows={5} className=' rounded-3 text-white fs-13 px-2  mb-3' placeholder="Hãy nêu cảm nghĩ của bạn" onChange={(e) => setContentAdd(e.target.value)}></textarea>
                             </div>
 
                             <div className="m-0 p-3 pb-5" style={{ minHeight: "300px" }}>
                                 <div className="image-upload-container">
-                                    <input
+                                    <input className='text-white'
                                         id="fileInput"
                                         type="file"
                                         multiple

@@ -70,7 +70,7 @@ body,
 }
 
 .border-image {
-    border-radius: 30px;
+    border-radius: 10px;
 }
 
 .bg-pink {
@@ -691,45 +691,49 @@ button {
 }
 
 
-.demo-sheet-brand {
-    position: fixed !important;
-    top: 50% !important;
-    left: 50% !important;
-    translate: -50% -50%;
-    width: 400px !important;
-    max-width: 80% !important;
-    height: auto !important;
-    /* modal co giãn */
-    max-height: 70vh !important;
-    /* giới hạn chiều cao */
-    background-color: transparent;
-    background-color: unset !important;
-    border-radius: 15px !important;
-    // overflow: hidden;
-    //  background-image: url('../image/bg-x.jpg') !important;
-    /* tránh tràn nội dung */
-}
+// .demo-sheet-brand {
+//     position: fixed !important;
+//     top: 50% !important;
+//     left: 50% !important;
+//     translate: -50% -50%;
+//     width: 400px !important;
+//     max-width: 80% !important;
+//     height: auto !important;
+//     /* modal co giãn */
+//     max-height: 70vh !important;
+//     /* giới hạn chiều cao */
+//     background-color: transparent;
+//     background-color: unset !important;
+//     border-radius: 15px !important;
+//     // overflow: hidden;
+//     //  background-image: url('../image/bg-x.jpg') !important;
+//     /* tránh tràn nội dung */
+// }
 
-.demo-sheet-brand .sheet-modal-inner {
-    display: block !important;
-    /* bỏ flex mặc định */
-    background: transparent !important;
-    height: auto !important;
-    max-height: 80vh;
-}
+// .demo-sheet-brand .sheet-modal-inner {
+//     display: block !important;
+//     /* bỏ flex mặc định */
+//     background: transparent !important;
+//     height: auto !important;
+//     max-height: 80vh;
+// }
 
-.demo-sheet-brand .page {
-    height: auto !important;
-}
+// .demo-sheet-brand .page {
+//     height: auto !important;
+// }
 
 .demo-sheet-brand .page-content {
-    height: auto !important;
-    max-height: 70vh;
-    overflow-y: auto !important;
-    border-radius: 15px !important;
-    padding-bottom: 10px;
+    padding-bottom: 20px !important;
 
 }
+
+.demo-sheet-brand.sheet-modal-in .sheet-backdrop {
+  background: rgba(255, 255, 255, 0.4) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  opacity: 1 !important;
+}
+
 
 .card {
     background-color: #302b8f;
@@ -752,3 +756,66 @@ button {
     /* Đặt nền option là trắng để text đen hiện lên rõ */
     background-color: white !important;
 }
+
+
+#view-account .page-content {
+  padding-top: 0 !important;
+}
+
+.border-gradient {
+  position: relative;
+  padding-bottom: 10px; /* tạo khoảng cách nếu cần */
+}
+
+.border-gradient::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1.5px; /* độ dày đường */
+  background: linear-gradient(to right, #7b61ff, #fcaeff, #00e6ff);
+  border-radius: 2px;
+}
+
+.list-no-chevron .item-content {
+  position: relative;
+  padding-bottom: 8px; /* tạo khoảng cách để viền không dính chữ */
+}
+
+.list-no-chevron .item-content::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, #7b61ff, #fcaeff, #00e6ff);
+  border-radius: 2px;
+  opacity: 0.8;
+}
+.p-60{
+    padding-top: 60px !important;
+    background-color: transparent !important;
+}
+.m-15{
+    margin-top: -15px !important;
+}
+/* Nền hình cho Navbar trong panel */
+.custom-navbar .navbar-bg {
+  background-image: url("../image/nen.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 0px !important;
+}
+.toolbar .icon-dark {
+  color: black !important;
+  fill: black !important; /* nếu là SVG */
+}
+
+
+
+
+
+

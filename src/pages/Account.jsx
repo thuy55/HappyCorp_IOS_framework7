@@ -224,30 +224,64 @@ const AccountPage = () => {
         <>
             <Page name="home">
                 {/* Top Navbar */}
-                <CommonNavbar />
+                {/* <CommonNavbar /> */}
                 {/* Page content */}
 
-                <div className='p-2 position-relative'>
-                    <img src="../image/nen-den.webp" className=' rounded-4 w-100' style={{ height: '200px', objectFit: 'cover' }}></img>
+                <div className="position-relative text-center ">
+                    {/* Nền */}
+                    <img
+                        src="../image/nen.png"
+                        className="w-100"
+                        style={{ height: "350px", objectFit: "cover" }}
+                    />
 
-                    <div className='position-absolute top-0 end-0 m-3'>
-                        <img src='../image/happy-corp-logo.png' style={{ height: "70px" }}></img>
+                    {/* Thanh tiêu đề */}
+                    <div
+                        className="position-absolute top-0 start-0 w-100 d-flex justify-content-between align-items-center p-3 p-60"
+                        style={{ zIndex: 10 }}
+                    >
+                        <div className="fw-bold d-flex align-items-center text-dark">
+                            {/* <Link  className="d-flex align-items-center text-white">
+                                <Icon f7="arrow_left" size='15px' color='black' className='me-3'></Icon>
+                            </Link> */}
+                            Thông tin cá nhân
+                        </div>
+                        <img
+                            src="../image/happy-corp-logo.png"
+                            className=""
+                            style={{ height: "30px" }}
+                        />
                     </div>
-                    <img src={`https://api-happy.eclo.io/${avatar}`}
 
-                        // Xử lý lỗi: Nếu hình ảnh trên không load được, thay thế nó bằng URL mặc định
-                        onError={(e) => {
-                            e.target.onerror = null; // Ngăn chặn vòng lặp vô hạn nếu hình mặc định cũng lỗi
-                            e.target.src = 'https://img.freepik.com/premium-vector/people-profile-icon_24877-40758.jpg?semt=ais_hybrid&w=740&q=80';
-                        }} className='rounded-circle border border-4 border-dark position-absolute top-50 start-0 m-3' style={{ height: "150px", width: "150px" }}></img>
+                    {/* Avatar + Info */}
+                    <div
+                        className="position-absolute top-50 start-50 translate-middle text-center "
+                        style={{ zIndex: 5 }}
+                    >
+                        <img
+                            src={`https://api-happy.eclo.io/${avatar}`}
+                            onError={(e) => {
+                                e.target.onerror = null;
+                                e.target.src =
+                                    "https://img.freepik.com/premium-vector/people-profile-icon_24877-40758.jpg";
+                            }}
+                            className="rounded-circle border border-2 border-white shadow"
+                            style={{
+                                height: "150px",
+                                width: "150px",
+                                objectFit: "cover",
+                                marginTop: "70px"
+                            }}
+                        />
+                        <div className="mt-3 text-dark">
+                            <div className="fs-5 fw-bold">{name}</div>
+                            <div className=" fs-13">{email}</div>
+                        </div>
+                    </div>
                 </div>
-                <div className=' mx-4 ' style={{ marginTop: "15%" }}>
-                    <div className='fs-5 fw-bold mt-4'>{name}</div>
-                    <div className=''>{email}</div>
 
-                </div>
-                <Card className='p-0 border border-0'>
-                    <List className='my-3 fs-13 rounded-3 list-no-chevron mx-2' dividersIos mediaList outlineIos strongIos>
+                <Card className='p-0 border border-0 m-2 m-15'>
+                    <List className='m-2 mx-0 fs-13 rounded-3 list-no-chevron' dividersIos mediaList outlineIos strongIos>
                         <ListItem className='px-3'
                             title={
                                 <div className='mt-1' style={{ display: 'flex', gap: '6px', alignItems: 'center' }}>
@@ -330,8 +364,8 @@ const AccountPage = () => {
                         </ListItem>
                     </List>
                 </Card>
-                <Card className='p-0 border border-0 rounded-4'>
-                    <List className='fs-13 m-0 ' dividersIos mediaList outlineIos strongIos>
+                <Card className='p-0 border border-0 rounded-3 m-2'>
+                    <List className='fs-13 m-0' dividersIos mediaList outlineIos strongIos>
                         <ListItem className='px-3 pt-2 ' fill sheetOpen=".sheet-changepassword" link
                             title="Đổi mật khẩu"
                         >
@@ -357,7 +391,7 @@ const AccountPage = () => {
                     </List>
                 </Card>
 
-                <Card className='p-3 border border-0 rounded-4'>
+                <Card className='p-3 border border-0 rounded-3 m-2'>
                     <BlockTitle className='m-0 mb-3 text-white'>Mời bạn bè</BlockTitle>
                     <div className='row d-flex align-items-center'>
                         <div className='col-1'>
