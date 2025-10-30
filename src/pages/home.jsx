@@ -271,7 +271,7 @@ const HomePage = () => {
               className='size-icon me-2'>
             </lord-icon></Link>
         </NavRight>
-        <NavTitleLarge className='text' >
+        <NavTitleLarge className='text-dark' >
           <div className='d-flex justify-content-between align-items-center'>
             <div>
               <span className='fs-13  fw-normal me-1'>
@@ -303,6 +303,39 @@ const HomePage = () => {
         </div>
 
         {/* Page content */}
+        
+        <div className='row px-4'>
+          <div className='col-6 px-1'>
+            <div className=' p-2 rounded-4' style={{backgroundColor:"#fedfdc"}}>
+              <div>hgvgdsauyv</div>
+            </div>
+          </div>
+          <div className='col-6 px-1'>
+            <div className=' p-2 rounded-4' style={{backgroundColor:"#f0ddfd"}}>
+              <div>hgvgdsauyv</div>
+            </div>
+          </div>
+        </div>
+        <div className='row px-4'>
+          <div className='col-4 px-1'>
+            <div className=' p-2 rounded-4' style={{backgroundColor:"#def7fe"}}>
+              <div>hgvgdsauyv</div>
+            </div>
+          </div>
+          <div className='col-4 px-1'>
+            <div className=' p-2 rounded-4' style={{backgroundColor:"#fbf2d5"}}>
+              <div>hgvgdsauyv</div>
+            </div>
+          </div>
+          <div className='col-4 px-1'>
+            <div className=' p-2 rounded-4' style={{backgroundColor:"#ebfad1"}}>
+              <div>hgvgdsauyv</div>
+            </div>
+          </div>
+        </div>
+
+
+
         <List className='m-0 mt-2'>
           <div className="video-container rounded-3 px-2">
             <video

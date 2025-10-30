@@ -973,7 +973,7 @@ const SocialPage = () => {
 
                 {/* Page content */}
                 <div className='pb-2 pt-0 bg-social'>
-                    <Card className='m-0 p-3 pb-2 rounded-0 border border-0' style={{ backgroundColor: "#292489" }}>
+                    <div className='m-0 p-3 pb-2 rounded-0 border border-0 bg-white' >
                         <div className='row d-flex align-items-center'>
                             <div className='col-8'>
                                 <div className='d-flex align-items-center'>
@@ -997,8 +997,8 @@ const SocialPage = () => {
                                 </Link>
                             </div>
                         </div>
-                    </Card>
-                    <Card className='m-0 mt-1 p-0 rounded-0 border border-0' style={{ backgroundColor: "#292489" }}>
+                    </div>
+                    <div className='m-0 mt-1 p-0 pb-2 rounded-0 border border-0 bg-white'>
                         <div className='d-flex align-items-center justify-content-between p-3 pb-1'>
                             <div className='d-flex align-items-center'>
                                 <img src="https://www.in.pro.vn/wp-content/uploads/2025/01/avatar-nu-diu-dang.webp" onClick={() => { profile_social(socials.account.uid) }} className='rounded-circle' style={{ width: "40px", height: "40px" }}></img>
@@ -1085,8 +1085,8 @@ const SocialPage = () => {
                         </div>
 
 
-                    </Card>
-                    <Card className='m-0 mt-1 p-0 rounded-0 border border-0' style={{ backgroundColor: "#292489" }}>
+                    </div>
+                    <div className='m-0 mt-1 p-0 pb-2 rounded-0 border border-0 bg-white'>
                         <div className='d-flex align-items-center justify-content-between p-3 pb-1'>
                             <div className='d-flex align-items-center'>
                                 <img src="https://www.in.pro.vn/wp-content/uploads/2025/01/avatar-nu-diu-dang.webp" onClick={() => { profile_social(socials.account.uid) }} className='rounded-circle' style={{ width: "40px", height: "40px" }}></img>
@@ -1172,7 +1172,7 @@ const SocialPage = () => {
                                 </div>
                             </div>
                         </div>
-                    </Card>
+                    </div>
 
 
 

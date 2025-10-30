@@ -280,118 +280,68 @@ const AccountPage = () => {
                     </div>
                 </div>
 
-                <Card className='p-0 border border-0 m-2 m-15'>
-                    <List className='m-2 mx-0 fs-13 rounded-3 list-no-chevron' dividersIos mediaList outlineIos strongIos>
-                        <ListItem className='px-3'
-                            title={
-                                <div className='mt-1' style={{ display: 'flex', gap: '6px', alignItems: 'center' }}>
-                                    <span className="">Mã của bạn:</span>
-                                    <span className="fw-bold">#{code}</span>
-                                </div>
-                            }
-                        >
-                            <div slot="media" className='text-center bg-pink text-white rounded-circle' style={{ width: "8px", height: "8px" }}></div>
-                        </ListItem>
-                        <ListItem className='px-3'
-                            title={
-                                <div className='mt-1' style={{ display: 'flex', gap: '6px', alignItems: 'center' }}>
-                                    <span className="">Họ và tên:</span>
-                                    <span className="fw-bold">{name}</span>
-                                </div>
-                            }
-                        >
-                            <div slot="media" className='text-center bg-pink text-white rounded-circle' style={{ width: "8px", height: "8px" }}></div>
-                        </ListItem>
-                        <ListItem className='px-3'
-                            title={
-                                <div className='mt-1' style={{ display: 'flex', gap: '6px', alignItems: 'center' }}>
-                                    <span className="">Số điện thoại:</span>
-                                    <span className="fw-bold">{phone}</span>
-                                </div>
-                            }
-                        >
-                            <div slot="media" className='text-center bg-pink text-white rounded-circle' style={{ width: "8px", height: "8px" }}></div>
-                        </ListItem>
-                        <ListItem className='px-3'
-                            title={
-                                <div className='mt-1' style={{ display: 'flex', gap: '6px', alignItems: 'center' }}>
-                                    <span className="">Email:</span>
-                                    <span className="fw-bold">{email}</span>
-                                </div>
-                            }
-                        >
-                            <div slot="media" className='text-center bg-pink text-white rounded-circle' style={{ width: "8px", height: "8px" }}></div>
-                        </ListItem>
-                        <ListItem className='px-3'
-                            title={
-                                <div className='mt-1' style={{ display: 'flex', gap: '6px', alignItems: 'center' }}>
-                                    <span className="">Tài khoản:</span>
-                                    <span className="fw-bold">{account}</span>
-                                </div>
-                            }
-                        >
-                            <div slot="media" className='text-center bg-pink text-white rounded-circle' style={{ width: "8px", height: "8px" }}></div>
-                        </ListItem>
-                        <ListItem className='px-3'
-                            title={
-                                <div className='mt-1' style={{ display: 'flex', gap: '6px', alignItems: 'center' }}>
-                                    <span className="">Ngày sinh:</span>
-                                    <span className="fw-bold">{formatDate(birthday)}</span>
-                                </div>
-                            }
-                        >
-                            <div slot="media" className='text-center bg-pink text-white rounded-circle' style={{ width: "8px", height: "8px" }}></div>
-                        </ListItem>
-                        <ListItem className='px-3'
-                            title={
-                                <div className='mt-1' style={{ display: 'flex', gap: '6px', alignItems: 'center' }}>
-                                    <span className="">Giới tính:</span>
-                                    <span className="fw-bold">{gender == "1" ? "Nữ" : "Nam"}</span>
-                                </div>
-                            }
-                        >
-                            <div slot="media" className='text-center bg-pink text-white rounded-circle' style={{ width: "8px", height: "8px" }}></div>
-                        </ListItem>
-                        <ListItem className='px-3'
-                            title={
-                                <div className='mt-1' style={{ display: 'flex', gap: '6px', alignItems: 'center' }}>
-                                    <span className="">Ngày đăng ký:</span>
-                                    <span className="fw-bold">{dateRegister}</span>
-                                </div>
-                            }
-                        >
-                            <div slot="media" className='text-center bg-pink text-white rounded-circle' style={{ width: "8px", height: "8px" }}></div>
-                        </ListItem>
-                    </List>
+                <Card className='p-3 border border-1 m-2 m-15 bg-white rounded-3'>
+                    <div className='fs-13 fw-bold'>Thông tin tài khoản</div>
+                    <div className='px-2'>
+                        <div className='d-flex justify-content-between align-items-center mt-3'>
+                            <div className='fs-13 fw-bold'>Mã của bạn:</div>
+                            <div className=''>#{code}</div>
+                        </div>
+                        <div className='d-flex justify-content-between align-items-center mt-3'>
+                            <div className='fs-13 fw-bold'>Họ và tên:</div>
+                            <div >{name}</div>
+                        </div>
+                        <div className='d-flex justify-content-between align-items-center mt-3'>
+                            <div className='fs-13 fw-bold'>Số điện thoại:</div>
+                            <div >{phone}</div>
+                        </div>
+                        <div className='d-flex justify-content-between align-items-center mt-3'>
+                            <div className='fs-13 fw-bold'>Email:</div>
+                            <div >{email}</div>
+                        </div>
+                        <div className='d-flex justify-content-between align-items-center mt-3'>
+                            <div className='fs-13 fw-bold'>Tài khoản:</div>
+                            <div >{account}</div>
+                        </div>
+                        <div className='d-flex justify-content-between align-items-center mt-3'>
+                            <div className='fs-13 fw-bold'>Ngày sinh:</div>
+                            <div >{formatDate(birthday)}</div>
+                        </div>
+                        <div className='d-flex justify-content-between align-items-center mt-3'>
+                            <div className='fs-13 fw-bold'>Giới tính:</div>
+                            <div >{gender}</div>
+                        </div>
+                        <div className='d-flex justify-content-between align-items-center mt-3'>
+                            <div className='fs-13 fw-bold'>Ngày đăng ký:</div>
+                            <div >{dateRegister}</div>
+                        </div>
+                    </div>
+
                 </Card>
-                <Card className='p-0 border border-0 rounded-3 m-2'>
-                    <List className='fs-13 m-0' dividersIos mediaList outlineIos strongIos>
-                        <ListItem className='px-3 pt-2 ' fill sheetOpen=".sheet-changepassword" link
-                            title="Đổi mật khẩu"
-                        >
-                            <lord-icon
+                <Card className='p-3 border border-1 rounded-3 m-2'>
+                    <div className='d-flex align-items-center' fill sheetOpen=".sheet-changepassword" link>
+                        <lord-icon
                                 slot="media"
                                 src="https://cdn.lordicon.com/exymduqj.json"
                                 trigger="loop"
                                 colors="primary:#1fc5f7,secondary:#1fc5f7"
                                 style={{ width: '20px', height: '20px' }}
                             ></lord-icon>
-                        </ListItem>
-                        <ListItem className='px-3 pt-2 ' fill sheetOpen=".sheet-changeinfo" link
-                            title="Cập nhật thông tin"
-                        >
-                            <lord-icon
+                        <div className='fw-bold ms-3'>Đổi mật khẩu</div>
+                    </div>
+                     <div className='d-flex align-items-center mt-3' fill sheetOpen=".sheet-changeinfo" link>
+                         <lord-icon
                                 slot="media"
                                 src="https://cdn.lordicon.com/fikcyfpp.json"
                                 trigger="loop"
                                 colors="primary:#1fc5f7,secondary:#1fc5f7"
                                 style={{ width: '20px', height: '20px' }}
                             ></lord-icon>
-                        </ListItem>
-                    </List>
+                        <div className='fw-bold ms-3'>Cập nhật thông tin</div>
+                    </div>
                 </Card>
 
-                <Card className='p-3 border border-0 rounded-3 m-2'>
+                <Card className='p-3 border border-1 rounded-3 m-2'>
                     <BlockTitle className='m-0 mb-3 text-white'>Mời bạn bè</BlockTitle>
                     <div className='row d-flex align-items-center'>
                         <div className='col-1'>

@@ -64,6 +64,14 @@ var routes = [
     path: '/login/',
     component: LoginPage,
   },
+  // {
+  //   path: '/register/',
+  //   component: RegisterPage,
+  // },
+  // {
+  //   path: '/forgot-password/',
+  //   component: ForgotPasswordPage,
+  // },
   {
     path: '/event/',
     component: EventPage,
