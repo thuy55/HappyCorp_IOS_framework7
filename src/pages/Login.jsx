@@ -138,7 +138,7 @@ const LoginPage = () => {
             </div>
 
 
-            <Card className=' p-4 m-4 border border-0 shadow-sm rounded-4'>
+            <Card className=' p-4 m-4 border border-1 shadow-sm rounded-4'>
                 <div className=' fs-2 text-center fw-bold'>ĐĂNG NHẬP</div>
                 <List className='mt-4'>
                     <div className='fs-13 '>Số điện thoại</div>

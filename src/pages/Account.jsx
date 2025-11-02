@@ -229,11 +229,12 @@ const AccountPage = () => {
 
                 <div className="position-relative text-center ">
                     {/* Nền */}
-                    <img
+                    {/* <img
                         src="../image/nen.png"
                         className="w-100"
                         style={{ height: "350px", objectFit: "cover" }}
-                    />
+                    /> */}
+                    <div className='' style={{ backgroundColor: "#8CC1E9", height: "350px", objectFit: "cover" }}></div>
 
                     {/* Thanh tiêu đề */}
                     <div
@@ -241,7 +242,7 @@ const AccountPage = () => {
                         style={{ zIndex: 10 }}
                     >
                         <div className="fw-bold d-flex align-items-center text-dark">
-                            {/* <Link  className="d-flex align-items-center text-white">
+                            {/* <Link  className="d-flex align-items-center text-dark">
                                 <Icon f7="arrow_left" size='15px' color='black' className='me-3'></Icon>
                             </Link> */}
                             Thông tin cá nhân
@@ -279,113 +280,115 @@ const AccountPage = () => {
                         </div>
                     </div>
                 </div>
+                <div className=' pb-3 bg-social'>
+                    <Card className='p-3 border border-2 m-2 m-15 bg-white rounded-3'>
+                        <div className='fs-13 fw-bold'>Thông tin tài khoản</div>
+                        <div className='px-2'>
+                            <div className='d-flex justify-content-between align-items-center mt-3'>
+                                <div className='fs-13 fw-bold'>Mã của bạn:</div>
+                                <div className=''>#{code}</div>
+                            </div>
+                            <div className='d-flex justify-content-between align-items-center mt-3'>
+                                <div className='fs-13 fw-bold'>Họ và tên:</div>
+                                <div >{name}</div>
+                            </div>
+                            <div className='d-flex justify-content-between align-items-center mt-3'>
+                                <div className='fs-13 fw-bold'>Số điện thoại:</div>
+                                <div >{phone}</div>
+                            </div>
+                            <div className='d-flex justify-content-between align-items-center mt-3'>
+                                <div className='fs-13 fw-bold'>Email:</div>
+                                <div >{email}</div>
+                            </div>
+                            <div className='d-flex justify-content-between align-items-center mt-3'>
+                                <div className='fs-13 fw-bold'>Tài khoản:</div>
+                                <div >{account}</div>
+                            </div>
+                            <div className='d-flex justify-content-between align-items-center mt-3'>
+                                <div className='fs-13 fw-bold'>Ngày sinh:</div>
+                                <div >{formatDate(birthday)}</div>
+                            </div>
+                            <div className='d-flex justify-content-between align-items-center mt-3'>
+                                <div className='fs-13 fw-bold'>Giới tính:</div>
+                                <div >{gender}</div>
+                            </div>
+                            <div className='d-flex justify-content-between align-items-center mt-3'>
+                                <div className='fs-13 fw-bold'>Ngày đăng ký:</div>
+                                <div >{dateRegister}</div>
+                            </div>
+                        </div>
 
-                <Card className='p-3 border border-1 m-2 m-15 bg-white rounded-3'>
-                    <div className='fs-13 fw-bold'>Thông tin tài khoản</div>
-                    <div className='px-2'>
-                        <div className='d-flex justify-content-between align-items-center mt-3'>
-                            <div className='fs-13 fw-bold'>Mã của bạn:</div>
-                            <div className=''>#{code}</div>
-                        </div>
-                        <div className='d-flex justify-content-between align-items-center mt-3'>
-                            <div className='fs-13 fw-bold'>Họ và tên:</div>
-                            <div >{name}</div>
-                        </div>
-                        <div className='d-flex justify-content-between align-items-center mt-3'>
-                            <div className='fs-13 fw-bold'>Số điện thoại:</div>
-                            <div >{phone}</div>
-                        </div>
-                        <div className='d-flex justify-content-between align-items-center mt-3'>
-                            <div className='fs-13 fw-bold'>Email:</div>
-                            <div >{email}</div>
-                        </div>
-                        <div className='d-flex justify-content-between align-items-center mt-3'>
-                            <div className='fs-13 fw-bold'>Tài khoản:</div>
-                            <div >{account}</div>
-                        </div>
-                        <div className='d-flex justify-content-between align-items-center mt-3'>
-                            <div className='fs-13 fw-bold'>Ngày sinh:</div>
-                            <div >{formatDate(birthday)}</div>
-                        </div>
-                        <div className='d-flex justify-content-between align-items-center mt-3'>
-                            <div className='fs-13 fw-bold'>Giới tính:</div>
-                            <div >{gender}</div>
-                        </div>
-                        <div className='d-flex justify-content-between align-items-center mt-3'>
-                            <div className='fs-13 fw-bold'>Ngày đăng ký:</div>
-                            <div >{dateRegister}</div>
-                        </div>
-                    </div>
-
-                </Card>
-                <Card className='p-3 border border-1 rounded-3 m-2'>
-                    <div className='d-flex align-items-center' fill sheetOpen=".sheet-changepassword" link>
-                        <lord-icon
+                    </Card>
+                    <Card className='p-3 border border-2 rounded-3 m-2'>
+                        <div className='d-flex align-items-center' fill sheetOpen=".sheet-changepassword" link>
+                            <lord-icon
                                 slot="media"
                                 src="https://cdn.lordicon.com/exymduqj.json"
                                 trigger="loop"
                                 colors="primary:#1fc5f7,secondary:#1fc5f7"
                                 style={{ width: '20px', height: '20px' }}
                             ></lord-icon>
-                        <div className='fw-bold ms-3'>Đổi mật khẩu</div>
-                    </div>
-                     <div className='d-flex align-items-center mt-3' fill sheetOpen=".sheet-changeinfo" link>
-                         <lord-icon
+                            <div className='fw-bold ms-3'>Đổi mật khẩu</div>
+                        </div>
+                        <div className='d-flex align-items-center mt-3' fill sheetOpen=".sheet-changeinfo" link>
+                            <lord-icon
                                 slot="media"
                                 src="https://cdn.lordicon.com/fikcyfpp.json"
                                 trigger="loop"
                                 colors="primary:#1fc5f7,secondary:#1fc5f7"
                                 style={{ width: '20px', height: '20px' }}
                             ></lord-icon>
-                        <div className='fw-bold ms-3'>Cập nhật thông tin</div>
-                    </div>
-                </Card>
+                            <div className='fw-bold ms-3'>Cập nhật thông tin</div>
+                        </div>
+                    </Card>
 
-                <Card className='p-3 border border-1 rounded-3 m-2'>
-                    <BlockTitle className='m-0 mb-3 text-white'>Mời bạn bè</BlockTitle>
-                    <div className='row d-flex align-items-center'>
-                        <div className='col-1'>
-                            <div className='text-center bg-primary text-white rounded-circle' style={{ width: "20px", height: "20px" }}>1</div>
-                            {/* <Chip text="1" color="blue"  /> */}
+                    <Card className='p-3 border border-2 rounded-3 m-2'>
+                        <BlockTitle className='m-0 mb-3 text-dark'>Mời bạn bè</BlockTitle>
+                        <div className='row d-flex align-items-center'>
+                            <div className='col-1'>
+                                <div className='text-center bg-primary text-dark rounded-circle' style={{ width: "20px", height: "20px" }}>1</div>
+                                {/* <Chip text="1" color="blue"  /> */}
+                            </div>
+                            <div className='col-11'>
+                                <Block className='m-0 p-0'>
+                                    <p>Bạn gửi liên kết lời mời của mình tới bạn bè.</p>
+                                </Block>
+                            </div>
                         </div>
-                        <div className='col-11'>
-                            <Block className='m-0 p-0'>
-                                <p>Bạn gửi liên kết lời mời của mình tới bạn bè.</p>
-                            </Block>
+                        <div className='row my-3  d-flex align-items-center'>
+                            <div className='col-1'>
+                                <div className='text-center bg-primary text-dark rounded-circle' style={{ width: "20px", height: "20px" }}>2</div>
+                            </div>
+                            <div className='col-11'>
+                                <Block className='m-0 p-0'>
+                                    <p>Họ đăng ký và đặt phòng bằng cách sử dụng liên kết giới thiệu của bạn.</p>
+                                </Block>
+                            </div>
                         </div>
-                    </div>
-                    <div className='row my-3  d-flex align-items-center'>
-                        <div className='col-1'>
-                            <div className='text-center bg-primary text-white rounded-circle' style={{ width: "20px", height: "20px" }}>2</div>
+                        <div className='row  d-flex align-items-center'>
+                            <div className='col-1'>
+                                <div className='text-center bg-primary text-dark rounded-circle' style={{ width: "20px", height: "20px" }}>3</div>
+                            </div>
+                            <div className='col-11'>
+                                <Block className='m-0 p-0'>
+                                    <p>Từ lần đặt phòng đầu tiên của họ, bạn sẽ bắt đầu sẽ hoa hồng.</p>
+                                </Block>
+                            </div>
                         </div>
-                        <div className='col-11'>
-                            <Block className='m-0 p-0'>
-                                <p>Họ đăng ký và đặt phòng bằng cách sử dụng liên kết giới thiệu của bạn.</p>
-                            </Block>
-                        </div>
-                    </div>
-                    <div className='row  d-flex align-items-center'>
-                        <div className='col-1'>
-                            <div className='text-center bg-primary text-white rounded-circle' style={{ width: "20px", height: "20px" }}>3</div>
-                        </div>
-                        <div className='col-11'>
-                            <Block className='m-0 p-0'>
-                                <p>Từ lần đặt phòng đầu tiên của họ, bạn sẽ bắt đầu sẽ hoa hồng.</p>
-                            </Block>
-                        </div>
-                    </div>
-                    <BlockTitle className='m-0 mt-3 fs-14 text-white'>Liên kết của bạn</BlockTitle>
-                    <div className="m-2 mx-1  row border border-1 rounded-pill p-2 d-flex align-items-center " >
-                        <div className='col-11 p-1 border border-0 text-truncate'>https://beta.ellm.io/?</div>
+                        <BlockTitle className='m-0 mt-2 fs-14 text-dark'>Liên kết của bạn</BlockTitle>
+                        <div className="m-2 mx-1  row border border-2 rounded-pill p-2 d-flex align-items-center " >
+                            <div className='col-11 p-1 border border-0 text-truncate'>https://beta.ellm.io/?</div>
 
-                        <div className='col-1 d-flex justify-content-end px-0' onClick={() => {
-                            navigator.clipboard.writeText(`https://beta.ellm.io/?`);
-                            alert("Coppy success");
-                        }} >
-                            <Icon f7="doc_on_doc" size='20px'></Icon>
+                            <div className='col-1 d-flex justify-content-end px-0' onClick={() => {
+                                navigator.clipboard.writeText(`https://beta.ellm.io/?`);
+                                alert("Coppy success");
+                            }} >
+                                <Icon f7="doc_on_doc" size='20px'></Icon>
+                            </div>
                         </div>
-                    </div>
-                </Card>
+                    </Card>
+                </div>
+
             </Page>
             <Sheet
                 className="sheet-changepassword h-auto"
@@ -401,12 +404,12 @@ const AccountPage = () => {
                     </div>
                 </Toolbar>
                 <PageContent>
-                    <Block className='my-3 text-white'>
+                    <Block className='my-3 text-dark'>
                         <List className='my-2'>
                             <div className='fs-14 mt-4'>Mật khẩu cũ</div>
                             <div className="position-relative rounded-pill mt-2 w-100" style={{ border: "0.5px solid #1fc5f7" }}>
                                 <input value={passwordOld} onChange={(e) => { setPasswordOld(e.target.value) }}
-                                    className="rounded-pill w-100 pe-5 px-3 text-white"
+                                    className="rounded-pill w-100 pe-5 px-3 text-dark"
                                     placeholder="Mật khẩu"
                                     type={showPasswordold ? 'text' : 'password'}
                                 />
@@ -432,7 +435,7 @@ const AccountPage = () => {
                             <div className='fs-14 mt-4'>Mật khẩu mới</div>
                             <div className="position-relative rounded-pill mt-2 w-100" style={{ border: "0.5px solid #1fc5f7" }}>
                                 <input value={password} onChange={(e) => { setPassword(e.target.value) }}
-                                    className="rounded-pill  w-100 pe-5 text-white px-3"
+                                    className="rounded-pill  w-100 pe-5 text-dark px-3"
                                     placeholder="Mật khẩu"
                                     type={showPassword ? 'text' : 'password'}
                                 />
@@ -458,7 +461,7 @@ const AccountPage = () => {
                             <div className='fs-14 mt-4'>Nhập lại mật khẩu</div>
                             <div className="position-relative rounded-pill mt-2 w-100" style={{ border: "0.5px solid #1fc5f7" }}>
                                 <input value={passwordconfirm} onChange={(e) => { setPasswordconfirm(e.target.value) }}
-                                    className="rounded-pill  w-100  text-white pe-5 px-3"
+                                    className="rounded-pill  w-100  text-dark pe-5 px-3"
                                     placeholder="Mật khẩu"
                                     type={showRePassword ? 'text' : 'password'}
                                 />
@@ -483,7 +486,7 @@ const AccountPage = () => {
                             </div>
                             <div className='mt-4 grid grid-cols-2 grid-gap'>
                                 <div>
-                                    <button className='p-2 rounded-pill border border-secondary bg-transparent fs-14 text-white' onClick={() => { f7.sheet.close() }}>Hủy</button>
+                                    <button className='p-2 rounded-pill border border-secondary bg-transparent fs-14 text-dark' onClick={() => { f7.sheet.close() }}>Hủy</button>
                                 </div>
                                 <div>
                                     <button type="button" className='p-2 rounded-pill border-btn fs-14 text-pink' onClick={() => { changePassword() }}>Cập nhật</button>
@@ -567,10 +570,10 @@ const AccountPage = () => {
                             </Card>
                             <div className='mt-4 grid grid-cols-2 grid-gap'>
                                 <div>
-                                    <button className='p-2 rounded-pill border border-secondary bg-transparent fs-14 text-white' onClick={() => { f7.sheet.close() }}>Hủy</button>
+                                    <button className='p-2 rounded-pill border border-secondary bg-transparent fs-14 text-dark' onClick={() => { f7.sheet.close() }}>Hủy</button>
                                 </div>
                                 <div>
-                                    <button type="button" className='p-2 rounded-pill border-btn fs-14 text-white' onClick={() => { changeInfo() }}>Cập nhật</button>
+                                    <button type="button" className='p-2 rounded-pill border-btn fs-14 text-dark' onClick={() => { changeInfo() }}>Cập nhật</button>
                                 </div>
                             </div>
                         </List>

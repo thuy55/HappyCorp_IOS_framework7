@@ -303,40 +303,65 @@ const HomePage = () => {
         </div>
 
         {/* Page content */}
-        
-        <div className='row px-4'>
+
+        <div className='row mx-2 fw-bold fs-6 mt-3'>
           <div className='col-6 px-1'>
-            <div className=' p-2 rounded-4' style={{backgroundColor:"#fedfdc"}}>
-              <div>hgvgdsauyv</div>
+            <div className=' p-2 rounded-4' onClick={() => setSheetOpened(true)} style={{ backgroundColor: "#fedfdc", height: "80px" }}>
+              <div>Đặt bàn</div>
             </div>
           </div>
           <div className='col-6 px-1'>
-            <div className=' p-2 rounded-4' style={{backgroundColor:"#f0ddfd"}}>
-              <div>hgvgdsauyv</div>
+            <div className=' p-2 rounded-4' onClick={() => setSheetOpenedMenu(true)} style={{ backgroundColor: "#f0ddfd", height: "80px" }}>
+              <div>Thực đơn</div>
             </div>
           </div>
         </div>
-        <div className='row px-4'>
+        <div className='row mx-2 mt-2 fw-bold fs-6'>
           <div className='col-4 px-1'>
-            <div className=' p-2 rounded-4' style={{backgroundColor:"#def7fe"}}>
-              <div>hgvgdsauyv</div>
+            <div className=' p-2 rounded-4' onClick={() => setSheetOpenedEndow(true)} style={{ backgroundColor: "#def7fe", height: "80px" }}>
+              <div>Ưu đãi</div>
             </div>
           </div>
           <div className='col-4 px-1'>
-            <div className=' p-2 rounded-4' style={{backgroundColor:"#fbf2d5"}}>
-              <div>hgvgdsauyv</div>
+            <div className=' p-2 rounded-4' onClick={() => setSheetOpenedEvent(true)} style={{ backgroundColor: "#fbf2d5", height: "80px" }}>
+              <div>Sự kiện</div>
             </div>
           </div>
           <div className='col-4 px-1'>
-            <div className=' p-2 rounded-4' style={{backgroundColor:"#ebfad1"}}>
-              <div>hgvgdsauyv</div>
+            <div className=' p-2 rounded-4' onClick={() => setSheetOpenedRevenue(true)} style={{ backgroundColor: "#ebfad1", height: "80px" }}>
+              <div>Doanh thu</div>
             </div>
           </div>
         </div>
 
+        <div className="grid grid-cols-4 px-2 mt-3">
+          <div>
+            <div className='text-center rounded-4 mx-2 p-1'>
+              <img src='../image/catering.gif' className='w-50'></img>
+              <div className=' fs-13 '>90S HOUSE</div>
+            </div>
+          </div>
+          <div>
+            <div className='text-center rounded-4 mx-2 p-1'>
+              <img src='../image/online-order.gif' className='w-50'></img>
+              <div className=' fs-13'>LIMITED</div>
+            </div>
+          </div>
+          <div>
+            <div className='text-center rounded-4 mx-2 p-1'>
+              <img src='../image/ticket.gif' className='w-50'></img>
+              <div className=' fs-13'>ATLANTIS</div>
+            </div>
+          </div>
+          <div>
+            <div className='text-center rounded-4 mx-2 p-1'>
+              <img src='../image/bill.gif' className='w-50'></img>
+              <div className=' fs-13'>HẠC CẦM</div>
+            </div>
+          </div>
+        </div>
 
-
-        <List className='m-0 mt-2'>
+        <List className='m-0 mt-3'>
           <div className="video-container rounded-3 px-2">
             <video
               className="video-bg w-100 "
@@ -349,33 +374,6 @@ const HomePage = () => {
             </video>
           </div>
         </List>
-
-        <div className="grid grid-cols-4 px-2 mt-2">
-          <div onClick={() => setSheetOpenedMenu(true)}>
-            <div className='text-center rounded-4 mx-2 p-1'>
-              <img src='../image/catering.gif' className='w-50'></img>
-              <div className=' fs-13 '>Thực đơn</div>
-            </div>
-          </div>
-          <div onClick={() => setSheetOpened(true)}>
-            <div className='text-center rounded-4 mx-2 p-1'>
-              <img src='../image/online-order.gif' className='w-50'></img>
-              <div className=' fs-13'>Đặt bàn</div>
-            </div>
-          </div>
-          <div onClick={() => setSheetOpenedEvent(true)}>
-            <div className='text-center rounded-4 mx-2 p-1'>
-              <img src='../image/ticket.gif' className='w-50'></img>
-              <div className=' fs-13'>Sự kiện</div>
-            </div>
-          </div>
-          <div onClick={() => setSheetOpenedRevenue(true)}>
-            <div className='text-center rounded-4 mx-2 p-1'>
-              <img src='../image/bill.gif' className='w-50'></img>
-              <div className=' fs-13'>Doanh thu</div>
-            </div>
-          </div>
-        </div>
 
         <Link onClick={() => setSheetOpenedEndow(true)} className='fs-6 fw-bold mx-3 mt-3 justify-content-start d-flex align-items-center'>
           {/* <img src='../image/6.gif' className='size-icon'></img> */}
@@ -479,20 +477,70 @@ const HomePage = () => {
             style={{ width: '30px', height: '30px' }}>
           </lord-icon>
           Sự kiện</Link>
-        <swiper-container pagination
+        <swiper-container 
           loop
           autoplay='{"delay":5000, "disableOnInteraction": false}'
           class=" mt-3 demo-swiper-multiple demo-swiper-multiple-auto ps-3"
           space-between="10"
-          slides-per-view="1.15">
-          <swiper-slide><img onClick={() => setSheetOpenedEventDetail(true)} src='https://wallpaperaccess.com/full/2300142.jpg' className='w-100 border-image' ></img></swiper-slide>
-          <swiper-slide><img onClick={() => setSheetOpenedEventDetail(true)} src='https://wallpaperaccess.com/full/2300142.jpg' className='w-100 border-image'></img></swiper-slide>
-          <swiper-slide><img onClick={() => setSheetOpenedEventDetail(true)} src='https://wallpaperaccess.com/full/2300142.jpg' className='w-100 border-image'></img></swiper-slide>
-          <swiper-slide><img onClick={() => setSheetOpenedEventDetail(true)} src='https://wallpaperaccess.com/full/2300142.jpg' className='w-100 border-image' ></img></swiper-slide>
-          <swiper-slide><img src='https://wallpaperaccess.com/full/2300142.jpg' className='w-100 border-image'></img></swiper-slide>
-          <swiper-slide><img src='https://wallpaperaccess.com/full/2300142.jpg' className='w-100 border-image' ></img></swiper-slide>
-          <swiper-slide><img src='https://wallpaperaccess.com/full/2300142.jpg' className='w-100 border-image'></img></swiper-slide>
+          slides-per-view="1.25">
+          <swiper-slide>
+            <div onClick={() => setSheetOpenedEventDetail(true)}>
+              <img src='https://wallpaperaccess.com/full/2300142.jpg' className='w-100'></img>
+              <div className='fw-bold mt-2'>ATMOS FEAT.RHYDER | 20.11.2025</div>
+              <div className='mt-3' style={{color:"#438BC4"}}>2.500.000 - 10.000.000</div>
+              <div className='border border-bottom border-dark my-2' style={{ width: '30%' }}></div>
+              <div className='limited-lines2'>Trung Thu – khi ánh trăng soi lên những cuộc vui thượng lưu tại 90S House
+                Trăng rọi qua khung cửa, hương rượu khẽ nghiêng trong tiếng cười rộn rã.
+                Không gian 90S House đêm nay khoác lên sắc màu Trung Thu - ấm áp, tinh tế và đầy mê hoặc.</div>
+                <div className='d-flex justify-content-end mt-2'>
+                  <div className='d-flex align-items-center fs-11 fw-bold'>Xem thêm <Icon f7='arrow_right' className='ms-1' size="15px"></Icon> </div>
+                </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div onClick={() => setSheetOpenedEventDetail(true)}>
+              <img src='https://wallpaperaccess.com/full/2300142.jpg' className='w-100'></img>
+              <div className='fw-bold mt-2'>ATMOS FEAT.RHYDER | 20.11.2025</div>
+              <div className='mt-3' style={{color:"#438BC4"}}>2.500.000 - 10.000.000</div>
+              <div className='border border-bottom border-dark my-2' style={{ width: '30%' }}></div>
+              <div className='limited-lines2'>Trung Thu – khi ánh trăng soi lên những cuộc vui thượng lưu tại 90S House
+                Trăng rọi qua khung cửa, hương rượu khẽ nghiêng trong tiếng cười rộn rã.
+                Không gian 90S House đêm nay khoác lên sắc màu Trung Thu - ấm áp, tinh tế và đầy mê hoặc.</div>
+                <div className='d-flex justify-content-end mt-2 me-2'>
+                  <div className='d-flex align-items-center fs-11 fw-bold'>Xem thêm <Icon f7='arrow_right' className='ms-1' size="15px"></Icon> </div>
+                </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div onClick={() => setSheetOpenedEventDetail(true)}>
+              <img src='https://wallpaperaccess.com/full/2300142.jpg' className='w-100'></img>
+              <div className='fw-bold mt-2'>ATMOS FEAT.RHYDER | 20.11.2025</div>
+              <div className='mt-3' style={{color:"#438BC4"}}>2.500.000 - 10.000.000</div>
+              <div className='border border-bottom border-dark my-2' style={{ width: '30%' }}></div>
+              <div className='limited-lines2'>Trung Thu – khi ánh trăng soi lên những cuộc vui thượng lưu tại 90S House
+                Trăng rọi qua khung cửa, hương rượu khẽ nghiêng trong tiếng cười rộn rã.
+                Không gian 90S House đêm nay khoác lên sắc màu Trung Thu - ấm áp, tinh tế và đầy mê hoặc.</div>
+                <div className='d-flex justify-content-end mt-2'>
+                  <div className='d-flex align-items-center fs-11 fw-bold'>Xem thêm <Icon f7='arrow_right' className='ms-1' size="15px"></Icon> </div>
+                </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div onClick={() => setSheetOpenedEventDetail(true)}>
+              <img src='https://wallpaperaccess.com/full/2300142.jpg' className='w-100'></img>
+              <div className='fw-bold mt-2'>ATMOS FEAT.RHYDER | 20.11.2025</div>
+              <div className='mt-3' style={{color:"#438BC4"}}>2.500.000 - 10.000.000</div>
+              <div className='border border-bottom border-dark my-2' style={{ width: '30%' }}></div>
+              <div className='limited-lines2'>Trung Thu – khi ánh trăng soi lên những cuộc vui thượng lưu tại 90S House
+                Trăng rọi qua khung cửa, hương rượu khẽ nghiêng trong tiếng cười rộn rã.
+                Không gian 90S House đêm nay khoác lên sắc màu Trung Thu - ấm áp, tinh tế và đầy mê hoặc.</div>
+                <div className='d-flex justify-content-end mt-2'>
+                  <div className='d-flex align-items-center fs-11 fw-bold'>Xem thêm <Icon f7='arrow_right' className='ms-1' size="15px"></Icon> </div>
+                </div>
+            </div>
+          </swiper-slide>
         </swiper-container>
+
 
         {/* Calender */}
         <div className='fs-15 fw-bold mx-3 mt-3 d-flex align-items-center'>
@@ -701,7 +749,7 @@ const HomePage = () => {
                   <div className='col-10 fs-13 ms-2 border-bottom '>
                     <div className='fw-bold d-flex justify-content-between'>
                       Phòng: {history.room_name}
-                      { history.process == 100 &&
+                      {history.process == 100 &&
                         <span className='text-primary rounded-2'>Nhận khách</span>
                       }
                       {(history.process == 1 || history.process == 2) &&
