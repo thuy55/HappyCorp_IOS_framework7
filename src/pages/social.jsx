@@ -1002,7 +1002,7 @@ const SocialPage = () => {
                                     <lord-icon
                                         src="https://cdn.lordicon.com/wsaaegar.json"
                                         trigger="loop"
-                                        colors="primary:#1fc5f7,secondary:#1fc5f7"
+                                        colors="primary:#0055A0,secondary:#0055A0"
                                         className=' me-2'
                                         style={{ width: '30px', height: '30px' }}>
                                     </lord-icon>
@@ -1357,7 +1357,7 @@ const SocialPage = () => {
                             <lord-icon
                                 src="https://cdn.lordicon.com/sobzmbzh.json"
                                 trigger="loop"
-                                colors="primary:#1fc5f7,secondary:#1fc5f7"
+                                colors="primary:#0055A0,secondary:#0055A0"
                                 className=' me-2'
                                 style={{ width: '20px', height: '20px' }}>
                             </lord-icon>
@@ -1369,7 +1369,7 @@ const SocialPage = () => {
                             <lord-icon
                                 src="https://cdn.lordicon.com/rrbmabsx.json"
                                 trigger="loop"
-                                colors="primary:#1fc5f7,secondary:#1fc5f7"
+                                colors="primary:#0055A0,secondary:#0055A0"
                                 className=' me-2'
                                 style={{ width: '30px', height: '30px' }}>
                             </lord-icon>
@@ -1381,7 +1381,7 @@ const SocialPage = () => {
                             <lord-icon
                                 src="https://cdn.lordicon.com/cfoaotmk.json"
                                 trigger="loop"
-                                colors="primary:#1fc5f7,secondary:#1fc5f7"
+                                colors="primary:#0055A0,secondary:#0055A0"
                                 className=' me-2'
                                 style={{ width: '20px', height: '20px' }}>
                             </lord-icon>
@@ -1393,7 +1393,7 @@ const SocialPage = () => {
                             <lord-icon
                                 src="https://cdn.lordicon.com/lcvlsnre.json"
                                 trigger="loop"
-                                colors="primary:#1fc5f7,secondary:#1fc5f7"
+                                colors="primary:#0055A0,secondary:#0055A0"
                                 className=' me-2'
                                 style={{ width: '20px', height: '20px' }}>
                             </lord-icon>
@@ -1405,7 +1405,7 @@ const SocialPage = () => {
                             <lord-icon
                                 src="https://cdn.lordicon.com/dicvhxpz.json"
                                 trigger="loop"
-                                colors="primary:#1fc5f7,secondary:#1fc5f7"
+                                colors="primary:#0055A0,secondary:#0055A0"
                                 className=' me-2'
                                 style={{ width: '20px', height: '20px' }}>
                             </lord-icon>
@@ -1424,7 +1424,7 @@ const SocialPage = () => {
                             <lord-icon
                                 src="https://cdn.lordicon.com/fikcyfpp.json"
                                 trigger="loop"
-                                colors="primary:#1fc5f7,secondary:#1fc5f7"
+                                colors="primary:#0055A0,secondary:#0055A0"
                                 className=' me-2'
                                 style={{ width: '20px', height: '20px' }}>
                             </lord-icon>
@@ -1441,7 +1441,7 @@ const SocialPage = () => {
                                     <lord-icon
                                         src="https://cdn.lordicon.com/lcvlsnre.json"
                                         trigger="loop"
-                                        colors="primary:#1fc5f7,secondary:#1fc5f7"
+                                        colors="primary:#0055A0,secondary:#0055A0"
                                         className=' me-2'
                                         style={{ width: '20px', height: '20px' }}>
                                     </lord-icon>
@@ -1452,7 +1452,7 @@ const SocialPage = () => {
                                     <lord-icon
                                         src="https://cdn.lordicon.com/lcvlsnre.json"
                                         trigger="loop"
-                                        colors="primary:#1fc5f7,secondary:#1fc5f7"
+                                        colors="primary:#0055A0,secondary:#0055A0"
                                         className=' me-2'
                                         style={{ width: '20px', height: '20px' }}>
                                     </lord-icon>
@@ -1466,7 +1466,7 @@ const SocialPage = () => {
                             <lord-icon
                                 src="https://cdn.lordicon.com/dicvhxpz.json"
                                 trigger="loop"
-                                colors="primary:#1fc5f7,secondary:#1fc5f7"
+                                colors="primary:#0055A0,secondary:#0055A0"
                                 className=' me-2'
                                 style={{ width: '20px', height: '20px' }}>
                             </lord-icon>
@@ -1478,7 +1478,7 @@ const SocialPage = () => {
                             <lord-icon
                                 src="https://cdn.lordicon.com/evxithfv.json"
                                 trigger="loop"
-                                colors="primary:#1fc5f7,secondary:#1fc5f7"
+                                colors="primary:#0055A0,secondary:#0055A0"
                                 className=' me-2'
                                 style={{ width: '20px', height: '20px' }}>
                             </lord-icon>
@@ -1490,7 +1490,7 @@ const SocialPage = () => {
                             <lord-icon
                                 src="https://cdn.lordicon.com/lltgvngb.json"
                                 trigger="loop"
-                                colors="primary:#1fc5f7,secondary:#1fc5f7"
+                                colors="primary:#0055A0,secondary:#0055A0"
                                 className=' me-2'
                                 style={{ width: '20px', height: '20px' }}>
                             </lord-icon>
@@ -1503,7 +1503,7 @@ const SocialPage = () => {
                             <lord-icon
                                 src="https://cdn.lordicon.com/jzinekkv.json"
                                 trigger="loop"
-                                colors="primary:#1fc5f7,secondary:#1fc5f7"
+                                colors="primary:#0055A0,secondary:#0055A0"
                                 className=' me-2'
                                 style={{ width: '20px', height: '20px' }}>
                             </lord-icon>
@@ -1809,7 +1809,7 @@ const SocialPage = () => {
                                                             <lord-icon
                                                                 src="https://cdn.lordicon.com/fozsorqm.json"
                                                                 trigger="loop"
-                                                                colors="primary:#1fc5f7,secondary:#1fc5f7"
+                                                                colors="primary:#0055A0,secondary:#0055A0"
                                                                 className=' me-3'
                                                                 style={{ width: '20px', height: '20px' }}>
                                                             </lord-icon>
@@ -1895,23 +1895,23 @@ const SocialPage = () => {
             >
                 <div className='p-3 pb-4 pt-0'>
                     <div className='d-flex align-items-center mt-4 fw-bold'>
-                        <img src='../image/social_addimage.png' className='me-3'></img>
+                        <img src='../image/social1.png' className='me-3' style={{width:"30px", height:"30px"}}></img>
                         Ảnh/video
                     </div>
                      <div className='d-flex align-items-center mt-4 fw-bold'>
-                        <img src='../image/social_addpeople.png' className='me-3'></img>
+                        <img src='../image/social2.png' className='me-3' style={{width:"30px", height:"30px"}}></img>
                         Gắn thẻ người khác
                     </div>
                      <div className='d-flex align-items-center mt-4 fw-bold'>
-                        <img src='../image/social_addicon.png' className='me-3'></img>
+                        <img src='../image/social3.png' className='me-3' style={{width:"30px", height:"30px"}}></img>
                         Cảm xúc/Hoạt động
                     </div>
                      <div className='d-flex align-items-center mt-4 fw-bold'>
-                        <img src='../image/social_addlocation.png' className='me-3'></img>
+                        <img src='../image/social4.png' className='me-3' style={{width:"30px", height:"30px"}}></img>
                         Check in
                     </div>
                      <div className='d-flex align-items-center mt-4 fw-bold'>
-                        <img src='../image/social_addAa.png' className='me-3'></img>
+                        <img src='../image/social5.png' className='me-3' style={{width:"30px", height:"30px"}}></img>
                         Màu nền
                     </div>
                 </div>

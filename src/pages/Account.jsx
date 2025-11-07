@@ -266,7 +266,7 @@ const AccountPage = () => {
                                 e.target.src =
                                     "https://img.freepik.com/premium-vector/people-profile-icon_24877-40758.jpg";
                             }}
-                            className="rounded-circle border border-2 border-white shadow"
+                            className="rounded-circle border border-1 border-white shadow"
                             style={{
                                 height: "150px",
                                 width: "150px",
@@ -281,7 +281,7 @@ const AccountPage = () => {
                     </div>
                 </div>
                 <div className=' pb-3 bg-social'>
-                    <Card className='p-3 border border-2 m-2 m-15 bg-white rounded-3'>
+                    <Card className='p-3 border border-1 m-2 m-15 bg-white rounded-3'>
                         <div className='fs-13 fw-bold'>Thông tin tài khoản</div>
                         <div className='px-2'>
                             <div className='d-flex justify-content-between align-items-center mt-3'>
@@ -319,34 +319,34 @@ const AccountPage = () => {
                         </div>
 
                     </Card>
-                    <Card className='p-3 border border-2 rounded-3 m-2'>
-                        <div className='d-flex align-items-center' fill sheetOpen=".sheet-changepassword" link>
+                    <Card className='p-3 border border-1 rounded-3 m-2'>
+                        <Link className='d-flex align-items-center justify-content-start' fill sheetOpen=".sheet-changepassword" >
                             <lord-icon
                                 slot="media"
                                 src="https://cdn.lordicon.com/exymduqj.json"
                                 trigger="loop"
-                                colors="primary:#1fc5f7,secondary:#1fc5f7"
+                                colors="primary:#0055A0,secondary:#0055A0"
                                 style={{ width: '20px', height: '20px' }}
                             ></lord-icon>
                             <div className='fw-bold ms-3'>Đổi mật khẩu</div>
-                        </div>
-                        <div className='d-flex align-items-center mt-3' fill sheetOpen=".sheet-changeinfo" link>
+                        </Link>
+                        <Link className='d-flex align-items-center justify-content-start mt-4' fill sheetOpen=".sheet-changeinfo" >
                             <lord-icon
                                 slot="media"
                                 src="https://cdn.lordicon.com/fikcyfpp.json"
                                 trigger="loop"
-                                colors="primary:#1fc5f7,secondary:#1fc5f7"
+                                colors="primary:#0055A0,secondary:#0055A0"
                                 style={{ width: '20px', height: '20px' }}
                             ></lord-icon>
                             <div className='fw-bold ms-3'>Cập nhật thông tin</div>
-                        </div>
+                        </Link>
                     </Card>
 
-                    <Card className='p-3 border border-2 rounded-3 m-2'>
+                    <Card className='p-3 border border-1 rounded-3 m-2'>
                         <BlockTitle className='m-0 mb-3 text-dark'>Mời bạn bè</BlockTitle>
                         <div className='row d-flex align-items-center'>
                             <div className='col-1'>
-                                <div className='text-center bg-primary text-dark rounded-circle' style={{ width: "20px", height: "20px" }}>1</div>
+                                <div className='text-center bg-primary text-white rounded-circle' style={{ width: "20px", height: "20px" }}>1</div>
                                 {/* <Chip text="1" color="blue"  /> */}
                             </div>
                             <div className='col-11'>
@@ -357,7 +357,7 @@ const AccountPage = () => {
                         </div>
                         <div className='row my-3  d-flex align-items-center'>
                             <div className='col-1'>
-                                <div className='text-center bg-primary text-dark rounded-circle' style={{ width: "20px", height: "20px" }}>2</div>
+                                <div className='text-center bg-primary text-white rounded-circle' style={{ width: "20px", height: "20px" }}>2</div>
                             </div>
                             <div className='col-11'>
                                 <Block className='m-0 p-0'>
@@ -367,7 +367,7 @@ const AccountPage = () => {
                         </div>
                         <div className='row  d-flex align-items-center'>
                             <div className='col-1'>
-                                <div className='text-center bg-primary text-dark rounded-circle' style={{ width: "20px", height: "20px" }}>3</div>
+                                <div className='text-center bg-primary text-white rounded-circle' style={{ width: "20px", height: "20px" }}>3</div>
                             </div>
                             <div className='col-11'>
                                 <Block className='m-0 p-0'>
@@ -376,7 +376,7 @@ const AccountPage = () => {
                             </div>
                         </div>
                         <BlockTitle className='m-0 mt-2 fs-14 text-dark'>Liên kết của bạn</BlockTitle>
-                        <div className="m-2 mx-1  row border border-2 rounded-pill p-2 d-flex align-items-center " >
+                        <div className="m-2 mx-1  row border border-1 rounded-pill p-2 d-flex align-items-center " >
                             <div className='col-11 p-1 border border-0 text-truncate'>https://beta.ellm.io/?</div>
 
                             <div className='col-1 d-flex justify-content-end px-0' onClick={() => {
@@ -391,23 +391,27 @@ const AccountPage = () => {
 
             </Page>
             <Sheet
-                className="sheet-changepassword h-auto"
+                className="sheet-changepassword h-auto border border-top-2 rounded-top-4"
                 opened={sheetOpenedChangePass}
                 onSheetClosed={() => {
                     setSheetOpenedChangePass(false);
                 }}
             >
-                <Toolbar style={{ backgroundColor: "red !important" }}>
-                    <div className="left fs-14">Đổi mật khẩu</div>
+                {/* <Toolbar style={{ backgroundColor: "red !important" }}>
+                    <div className="left fs-14 text-dark">Đổi mật khẩu</div>
                     <div className="right">
                         <Link sheetClose>Close</Link>
                     </div>
-                </Toolbar>
-                <PageContent>
-                    <Block className='my-3 text-dark'>
+                </Toolbar> */}
+                <div className='d-flex justify-content-between align-items-center pt-3 px-3'>
+                    <div className='fs-13 fw-bold'>Đổi mật khẩu</div>
+                     <Link sheetClose>Close</Link>
+                </div>
+             
+                    <Block className='mb-3 text-dark'>
                         <List className='my-2'>
                             <div className='fs-14 mt-4'>Mật khẩu cũ</div>
-                            <div className="position-relative rounded-pill mt-2 w-100" style={{ border: "0.5px solid #1fc5f7" }}>
+                            <div className="position-relative rounded-pill mt-2 w-100" style={{ border: "0.5px solid #0055A0" }}>
                                 <input value={passwordOld} onChange={(e) => { setPasswordOld(e.target.value) }}
                                     className="rounded-pill w-100 pe-5 px-3 text-dark"
                                     placeholder="Mật khẩu"
@@ -433,7 +437,7 @@ const AccountPage = () => {
                                 </span>
                             </div>
                             <div className='fs-14 mt-4'>Mật khẩu mới</div>
-                            <div className="position-relative rounded-pill mt-2 w-100" style={{ border: "0.5px solid #1fc5f7" }}>
+                            <div className="position-relative rounded-pill mt-2 w-100" style={{ border: "0.5px solid #0055A0" }}>
                                 <input value={password} onChange={(e) => { setPassword(e.target.value) }}
                                     className="rounded-pill  w-100 pe-5 text-dark px-3"
                                     placeholder="Mật khẩu"
@@ -459,7 +463,7 @@ const AccountPage = () => {
                                 </span>
                             </div>
                             <div className='fs-14 mt-4'>Nhập lại mật khẩu</div>
-                            <div className="position-relative rounded-pill mt-2 w-100" style={{ border: "0.5px solid #1fc5f7" }}>
+                            <div className="position-relative rounded-pill mt-2 w-100" style={{ border: "0.5px solid #0055A0" }}>
                                 <input value={passwordconfirm} onChange={(e) => { setPasswordconfirm(e.target.value) }}
                                     className="rounded-pill  w-100  text-dark pe-5 px-3"
                                     placeholder="Mật khẩu"
@@ -494,23 +498,26 @@ const AccountPage = () => {
                             </div>
                         </List>
                     </Block>
-                </PageContent>
             </Sheet>
 
             <Sheet
-                className="sheet-changeinfo h-auto"
+                className="sheet-changeinfo h-auto border-top-2 rounded-top-4"
                 opened={sheetOpenedChangeInfo}
                 onSheetClosed={() => {
                     setSheetOpenedChangeInfo(false);
                 }}
             >
-                <Toolbar style={{ backgroundColor: "red !important" }}>
-                    <div className="left fs-14">Cập nhật thông tin</div>
+                {/* <Toolbar style={{ backgroundColor: "red !important" }}>
+                    <div className="left fs-13 fw-bold text-dark">Cập nhật thông tin</div>
                     <div className="right">
                         <Link sheetClose>Close</Link>
                     </div>
-                </Toolbar>
-                <PageContent>
+                </Toolbar> */}
+                <div className='d-flex justify-content-between align-items-center pt-3 px-3'>
+                    <div className='fs-13 fw-bold'>Cập nhật thông tin</div>
+                     <Link sheetClose>Close</Link>
+                </div>
+    
                     <Block className='my-3'>
                         <List className='my-2'>
                             <div className='fs-14 mt-4'>Họ và tên</div>
@@ -580,7 +587,7 @@ const AccountPage = () => {
 
 
                     </Block>
-                </PageContent>
+   
             </Sheet>
         </>
 

@@ -64,7 +64,7 @@ export default function SheetRoomDetail({ opened, onClose }) {
                     </div> */}
                     <div className="position-relative">
                         <img
-                            src="https://thietkethicong.org/images/Product/Mau-phong-hat-karaoke-vip-phong-cach-Tan-Co-Dien-1.jpg"
+                            src="https://bcec.vn/upload/original-image/cdn1/images/202207/source_img/mau-thiet-ke-phong-karaoke-moi-nhat-2022-02-P8021-1657354289554.jpg"
                             className="w-100"
                             alt="karaoke"
                         />
@@ -83,10 +83,10 @@ export default function SheetRoomDetail({ opened, onClose }) {
                     </div>
 
                     <div className="row m-3 pb-2 mx-0 d-flex align-items-center border-bottom">
-                        <div className="col-9 fs-15 fw-bold">
+                        <div className="col-6 fs-15 fw-bold">
                            Phòng {roomDetail && roomDetail.name}
                         </div>
-                        <div className="col-3 text-end">
+                        <div className="col-6 text-end">
                             Khu vực {area && area.name}
                         </div>
                     </div>

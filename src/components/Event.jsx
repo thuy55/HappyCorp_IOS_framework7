@@ -53,7 +53,7 @@ export default function SheetEvent({ opened, onClose }) {
                 onSheetClosed={onClose}
             >
                 <Toolbar className="">
-                    <div className="left fw-bold d-flex align-items-center mb-3">
+                    <div className="left fw-bold d-flex align-items-center text-dark mb-3">
                         <button
                             className="rounded-circle border-0 bg-light  me-3 d-flex justify-content-center p-1"
                             style={{ width: "25px", height: "25px", lineHeight: "25px" }}
@@ -63,6 +63,7 @@ export default function SheetEvent({ opened, onClose }) {
 
                         </button>
                         Sự kiện
+
                     </div>
                     {/* <div className="right fs-13">
                         <Link sheetClose>Close</Link>
@@ -74,7 +75,7 @@ export default function SheetEvent({ opened, onClose }) {
                     {/* <div className="row w-100"> */}
 
                     <div className=' position-relative'>
-                        <img src="../image/image-event.png" className='  w-100' style={{  objectFit: 'cover' }}></img>
+                        <img src="../image/image-event.png" className='  w-100' style={{ objectFit: 'cover' }}></img>
 
                         <div className='position-absolute top-0 end-0 m-2'>
                             <img src='../image/happy-corp-logo.png' style={{ height: "30px" }}></img>

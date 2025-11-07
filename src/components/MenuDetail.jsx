@@ -87,7 +87,7 @@ export default function SheetMenuDetail({ opened, onClose, active }) {
                             </button>
                         </div>
                     </div>
-                    <div className="row m-3 mx-0 d-flex align-items-center">
+                    <div className="row m-3 mx-0 d-flex align-items-center text-dark">
                         <div className="col-9 fs-15 fw-bold">
                             {food && food.name} - {food && food.category}
                         </div>

@@ -183,7 +183,7 @@ export default function SheetBookingMenu({ opened, onClose }) {
                 onSheetClosed={onClose}
             >
                 <Toolbar className="">
-                    <div className="left fw-bold d-flex align-items-center mb-3">
+                    <div className="left fw-bold d-flex align-items-center text-dark mb-3">
                         <button
                             className="rounded-circle border-0 bg-light  me-3 d-flex justify-content-center p-1"
                             style={{ width: "25px", height: "25px", lineHeight: "25px" }}
@@ -346,7 +346,7 @@ export default function SheetBookingMenu({ opened, onClose }) {
                 </PageContent>
                 <footer className="fixed-bottom p-3 py-2">
                     <div className="grid grid-cols-2 grid-gap">
-                        <Button sheetClose className="bg-secondary p-3 rounded-pill fs-15" onClick={() => { localStorage.removeItem("selectedBookingMenu"); onClose() }}>Hủy</Button>
+                        <Button sheetClose className="bg-secondary text-white p-3 rounded-pill fs-15" onClick={() => { localStorage.removeItem("selectedBookingMenu"); onClose() }}>Hủy</Button>
                         <Button className="bg-pink p-3 rounded-pill text-white fs-15" onClick={() => {
                             setSheetOpened1(true), console.log(32354);
                         }}>({numberOfUniqueItems}) Món</Button>

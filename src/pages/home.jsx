@@ -245,7 +245,7 @@ const HomePage = () => {
               src="https://cdn.lordicon.com/vmiwgvnx.json"
               trigger="loop"
               state="loop-spin"
-              colors="primary:#1fc5f7,secondary:#1fc5f7"
+              colors="primary:#0055A0,secondary:#0055A0"
               className='size-icon me-2'>
             </lord-icon> */}
             <img src='../image/menu-xanh.png' style={{ width: "30px" }}></img>
@@ -260,14 +260,14 @@ const HomePage = () => {
             <lord-icon
               src="https://cdn.lordicon.com/wjyqkiew.json"
               trigger="loop"
-              colors="primary:#1fc5f7,secondary:#1fc5f7"
+              colors="primary:#0055A0,secondary:#0055A0"
               className='size-icon'>
             </lord-icon></Link>
           <Link onClick={() => setSheetOpenedBrand(true)} >
             <lord-icon
               src="https://cdn.lordicon.com/tjjwskjx.json"
               trigger="loop"
-              colors="primary:#1fc5f7,secondary:#1fc5f7"
+              colors="primary:#0055A0,secondary:#0055A0"
               className='size-icon me-2'>
             </lord-icon></Link>
         </NavRight>
@@ -293,7 +293,7 @@ const HomePage = () => {
               <lord-icon
                 src="https://cdn.lordicon.com/wjyqkiew.json"
                 trigger="loop"
-                colors="primary:#1fc5f7,secondary:#1fc5f7"
+                colors="primary:#0055A0,secondary:#0055A0"
                 className=' me-2'
                 style={{ width: '30px', height: '30px' }}>
               </lord-icon>
@@ -306,62 +306,67 @@ const HomePage = () => {
 
         <div className='row mx-2 fw-bold fs-6 mt-3'>
           <div className='col-6 px-1'>
-            <div className=' p-2 rounded-4' onClick={() => setSheetOpened(true)} style={{ backgroundColor: "#fedfdc", height: "80px" }}>
+            <img src='../image/home_booking.jpg' onClick={() => setSheetOpened(true)} className='w-100 rounded-4'></img>
+            {/* <div className=' p-2 rounded-4' onClick={() => setSheetOpened(true)} style={{ backgroundColor: "#fedfdc", height: "80px" }}>
               <div>Đặt bàn</div>
-            </div>
+            </div> */}
           </div>
           <div className='col-6 px-1'>
-            <div className=' p-2 rounded-4' onClick={() => setSheetOpenedMenu(true)} style={{ backgroundColor: "#f0ddfd", height: "80px" }}>
+            <img src='../image/home_menu.jpg' onClick={() => setSheetOpenedMenu(true)} className='w-100 rounded-4'></img>
+            {/* <div className=' p-2 rounded-4' onClick={() => setSheetOpenedMenu(true)} style={{ backgroundColor: "#f0ddfd", height: "80px" }}>
               <div>Thực đơn</div>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className='row mx-2 mt-2 fw-bold fs-6'>
           <div className='col-4 px-1'>
-            <div className=' p-2 rounded-4' onClick={() => setSheetOpenedEndow(true)} style={{ backgroundColor: "#def7fe", height: "80px" }}>
+            <img src='../image/home_uudai.jpg' onClick={() => setSheetOpenedEndow(true)} className='w-100 rounded-4'></img>
+            {/* <div className=' p-2 rounded-4' onClick={() => setSheetOpenedEndow(true)} style={{ backgroundColor: "#def7fe", height: "80px" }}>
               <div>Ưu đãi</div>
-            </div>
+            </div> */}
           </div>
           <div className='col-4 px-1'>
-            <div className=' p-2 rounded-4' onClick={() => setSheetOpenedEvent(true)} style={{ backgroundColor: "#fbf2d5", height: "80px" }}>
+            <img src='../image/home_event.jpg' onClick={() => setSheetOpenedEvent(true)} className='w-100 rounded-4'></img>
+            {/* <div className=' p-2 rounded-4' onClick={() => setSheetOpenedEvent(true)} style={{ backgroundColor: "#fbf2d5", height: "80px" }}>
               <div>Sự kiện</div>
-            </div>
+            </div> */}
           </div>
           <div className='col-4 px-1'>
-            <div className=' p-2 rounded-4' onClick={() => setSheetOpenedRevenue(true)} style={{ backgroundColor: "#ebfad1", height: "80px" }}>
+            <img src='../image/home_doanhthu.jpg' onClick={() => setSheetOpenedRevenue(true)} className='w-100 rounded-4'></img>
+            {/* <div className=' p-2 rounded-4' onClick={() => setSheetOpenedRevenue(true)} style={{ backgroundColor: "#ebfad1", height: "80px" }}>
               <div>Doanh thu</div>
+            </div> */}
+          </div>
+        </div>
+
+        <div className="grid grid-cols-4 px-2 mt-4">
+          <div>
+            <div className='text-center rounded-4  p-1'>
+              <img src='../image/brand1.gif' style={{width:"40%"}}></img>
+              <div className=' fs-13 mt-1'>90S HOUSE</div>
+            </div>
+          </div>
+          <div>
+            <div className='text-center rounded-4  p-1'>
+              <img src='../image/brand2.gif'  style={{width:"40%"}}></img>
+              <div className=' fs-13 mt-1'>LIMITED</div>
+            </div>
+          </div>
+          <div>
+            <div className='text-center rounded-4  p-1'>
+              <img src='../image/brand3.gif' style={{width:"40%"}}></img>
+              <div className=' fs-13 mt-1'>ATLANTIS</div>
+            </div>
+          </div>
+          <div>
+            <div className='text-center rounded-4  p-1'>
+              <img src='../image/brand4.gif' style={{width:"40%"}}></img>
+              <div className=' fs-13 mt-1'>HẠC CẦM</div>
             </div>
           </div>
         </div>
 
-        <div className="grid grid-cols-4 px-2 mt-3">
-          <div>
-            <div className='text-center rounded-4 mx-2 p-1'>
-              <img src='../image/catering.gif' className='w-50'></img>
-              <div className=' fs-13 '>90S HOUSE</div>
-            </div>
-          </div>
-          <div>
-            <div className='text-center rounded-4 mx-2 p-1'>
-              <img src='../image/online-order.gif' className='w-50'></img>
-              <div className=' fs-13'>LIMITED</div>
-            </div>
-          </div>
-          <div>
-            <div className='text-center rounded-4 mx-2 p-1'>
-              <img src='../image/ticket.gif' className='w-50'></img>
-              <div className=' fs-13'>ATLANTIS</div>
-            </div>
-          </div>
-          <div>
-            <div className='text-center rounded-4 mx-2 p-1'>
-              <img src='../image/bill.gif' className='w-50'></img>
-              <div className=' fs-13'>HẠC CẦM</div>
-            </div>
-          </div>
-        </div>
-
-        <List className='m-0 mt-3'>
+        <List className='m-0 mt-4'>
           <div className="video-container rounded-3 px-2">
             <video
               className="video-bg w-100 "
@@ -380,7 +385,7 @@ const HomePage = () => {
           <lord-icon
             src="https://cdn.lordicon.com/puebsmel.json"
             trigger="loop"
-            colors="primary:#1fc5f7,secondary:#1fc5f7"
+            colors="primary:#0055A0,secondary:#0055A0"
             className=' me-1'
             style={{ width: '30px', height: '30px' }}>
           </lord-icon>
@@ -396,7 +401,7 @@ const HomePage = () => {
                   <div className='mt-2 fst-italic'> <lord-icon
                     src="https://cdn.lordicon.com/puebsmel.json"
                     trigger="loop"
-                    colors="primary:#1fc5f7,secondary:#1fc5f7"
+                    colors="primary:#0055A0,secondary:#0055A0"
                     className=' me-1'
                     style={{ width: '20px', height: '20px' }}>
                   </lord-icon>
@@ -416,7 +421,7 @@ const HomePage = () => {
                     <lord-icon
                       src="https://cdn.lordicon.com/puebsmel.json"
                       trigger="loop"
-                      colors="primary:#1fc5f7,secondary:#1fc5f7"
+                      colors="primary:#0055A0,secondary:#0055A0"
                       className=' me-1'
                       style={{ width: '20px', height: '20px' }}>
                     </lord-icon>
@@ -436,7 +441,7 @@ const HomePage = () => {
                     <lord-icon
                       src="https://cdn.lordicon.com/puebsmel.json"
                       trigger="loop"
-                      colors="primary:#1fc5f7,secondary:#1fc5f7"
+                      colors="primary:#0055A0,secondary:#0055A0"
                       className=' me-1'
                       style={{ width: '20px', height: '20px' }}>
                     </lord-icon>
@@ -456,7 +461,7 @@ const HomePage = () => {
                     <lord-icon
                       src="https://cdn.lordicon.com/puebsmel.json"
                       trigger="loop"
-                      colors="primary:#1fc5f7,secondary:#1fc5f7"
+                      colors="primary:#0055A0,secondary:#0055A0"
                       className=' me-1'
                       style={{ width: '20px', height: '20px' }}>
                     </lord-icon>
@@ -472,7 +477,7 @@ const HomePage = () => {
           <lord-icon
             src="https://cdn.lordicon.com/okgbpdra.json"
             trigger="loop"
-            colors="primary:#1fc5f7,secondary:#1fc5f7"
+            colors="primary:#0055A0,secondary:#0055A0"
             className=' me-1'
             style={{ width: '30px', height: '30px' }}>
           </lord-icon>
@@ -487,7 +492,7 @@ const HomePage = () => {
             <div onClick={() => setSheetOpenedEventDetail(true)}>
               <img src='https://wallpaperaccess.com/full/2300142.jpg' className='w-100'></img>
               <div className='fw-bold mt-2'>ATMOS FEAT.RHYDER | 20.11.2025</div>
-              <div className='mt-3' style={{color:"#438BC4"}}>2.500.000 - 10.000.000</div>
+              <div className='mt-3' style={{color:"#0055A0"}}>2.500.000 - 10.000.000</div>
               <div className='border border-bottom border-dark my-2' style={{ width: '30%' }}></div>
               <div className='limited-lines2'>Trung Thu – khi ánh trăng soi lên những cuộc vui thượng lưu tại 90S House
                 Trăng rọi qua khung cửa, hương rượu khẽ nghiêng trong tiếng cười rộn rã.
@@ -501,7 +506,7 @@ const HomePage = () => {
             <div onClick={() => setSheetOpenedEventDetail(true)}>
               <img src='https://wallpaperaccess.com/full/2300142.jpg' className='w-100'></img>
               <div className='fw-bold mt-2'>ATMOS FEAT.RHYDER | 20.11.2025</div>
-              <div className='mt-3' style={{color:"#438BC4"}}>2.500.000 - 10.000.000</div>
+              <div className='mt-3' style={{color:"#0055A0"}}>2.500.000 - 10.000.000</div>
               <div className='border border-bottom border-dark my-2' style={{ width: '30%' }}></div>
               <div className='limited-lines2'>Trung Thu – khi ánh trăng soi lên những cuộc vui thượng lưu tại 90S House
                 Trăng rọi qua khung cửa, hương rượu khẽ nghiêng trong tiếng cười rộn rã.
@@ -515,7 +520,7 @@ const HomePage = () => {
             <div onClick={() => setSheetOpenedEventDetail(true)}>
               <img src='https://wallpaperaccess.com/full/2300142.jpg' className='w-100'></img>
               <div className='fw-bold mt-2'>ATMOS FEAT.RHYDER | 20.11.2025</div>
-              <div className='mt-3' style={{color:"#438BC4"}}>2.500.000 - 10.000.000</div>
+              <div className='mt-3' style={{color:"#0055A0"}}>2.500.000 - 10.000.000</div>
               <div className='border border-bottom border-dark my-2' style={{ width: '30%' }}></div>
               <div className='limited-lines2'>Trung Thu – khi ánh trăng soi lên những cuộc vui thượng lưu tại 90S House
                 Trăng rọi qua khung cửa, hương rượu khẽ nghiêng trong tiếng cười rộn rã.
@@ -529,7 +534,7 @@ const HomePage = () => {
             <div onClick={() => setSheetOpenedEventDetail(true)}>
               <img src='https://wallpaperaccess.com/full/2300142.jpg' className='w-100'></img>
               <div className='fw-bold mt-2'>ATMOS FEAT.RHYDER | 20.11.2025</div>
-              <div className='mt-3' style={{color:"#438BC4"}}>2.500.000 - 10.000.000</div>
+              <div className='mt-3' style={{color:"#0055A0"}}>2.500.000 - 10.000.000</div>
               <div className='border border-bottom border-dark my-2' style={{ width: '30%' }}></div>
               <div className='limited-lines2'>Trung Thu – khi ánh trăng soi lên những cuộc vui thượng lưu tại 90S House
                 Trăng rọi qua khung cửa, hương rượu khẽ nghiêng trong tiếng cười rộn rã.
@@ -547,7 +552,7 @@ const HomePage = () => {
           <lord-icon
             src="https://cdn.lordicon.com/uphbloed.json"
             trigger="loop"
-            colors="primary:#1fc5f7,secondary:#1fc5f7"
+            colors="primary:#0055A0,secondary:#0055A0"
             className=' me-1'
             style={{ width: '30px', height: '30px' }}>
           </lord-icon>
@@ -557,7 +562,7 @@ const HomePage = () => {
           <div className="calendar  p-1  rounded-4 shadow-sm " style={{ backdropFilter: "blur(50px)" }}>
             <div className="d-flex justify-content-between text-center mb-2 py-1">
               {week.map((day, idx) => (
-                <div key={idx} className="flex-fill fw-bold bg-pink mx-1 py-2 rounded-3 p-1" style={{ fontSize: "13px" }}>{day}</div>
+                <div key={idx} className="flex-fill fw-bold bg-pink text-white mx-1 py-2 rounded-3 p-1" style={{ fontSize: "13px" }}>{day}</div>
               ))}
             </div>
             <div className="d-flex flex-wrap text-center">
@@ -580,7 +585,7 @@ const HomePage = () => {
                   // <Link className='m-0 p-0' fill popupOpen="#popup-view-booking" onClick={handleDayClick} >
                   <Card onClick={handleDayClick}
                     key={idx}
-                    className={`card-animated-bg rounded-3 m-1 p-1 border border-0 ${isCurrentMonth ? '' : 'bg-date'} `}
+                    className={` rounded-3 m-1 p-1 border border-0 bg-light ${isCurrentMonth ? 'card-animated-bg' : 'bg-date'} `}
                     style={{
                       width: "12%",
                       color: isCurrentMonth ? undefined : 'transparent',
@@ -597,17 +602,17 @@ const HomePage = () => {
                           return (
                             <>
                               <div className='col-6 p-0 ps-1 ' onClick={handleDayClick} key={key}>
-                                <div className='bg-danger text-white rounded-2'>
+                                <div className='bg-danger  bg-opacity-25 rounded-2'>
                                   {book.booking[0]}
                                 </div>
                               </div>
                               <div className='col-6 p-0 mt-1 pe-1' onClick={handleDayClick}>
-                                <div className='bg-success text-white rounded-2'>
+                                <div className='bg-success  bg-opacity-25 rounded-2'>
                                   {book.booking[1]}
                                 </div>
                               </div>
                               <div className='col-6 p-0 mt-1 ps-1' onClick={handleDayClick}>
-                                <div className='bg-warning text-white rounded-2'>
+                                <div className='bg-warning  bg-opacity-25 rounded-2'>
                                   {book.booking[2]}
                                 </div>
                               </div>
@@ -624,15 +629,15 @@ const HomePage = () => {
 
             <div className="d-flex justify-content-between align-items-center gap-3  p-2 ">
               <div className="d-flex align-items-center gap-1">
-                <Badge className='bg-pink'> </Badge>
+                <Badge className='bg-danger bg-opacity-25' > </Badge>
                 <span className='fs-13'> Tổng booking</span>
               </div>
               <div className="d-flex align-items-center gap-1">
-                <Badge className='bg-success'> </Badge>
+                <Badge className='bg-success bg-opacity-25'> </Badge>
                 <span className='fs-13'> Đã thanh toán</span>
               </div>
               <div className="d-flex align-items-center gap-1">
-                <Badge className='bg-warning'> </Badge>
+                <Badge className='bg-warning bg-opacity-25'> </Badge>
                 <span className='fs-13'> Còn chờ</span>
               </div>
             </div>
@@ -645,7 +650,7 @@ const HomePage = () => {
             <lord-icon
               src="https://cdn.lordicon.com/psyssele.json"
               trigger="loop"
-              colors="primary:#1fc5f7,secondary:#1fc5f7"
+              colors="primary:#0055A0,secondary:#0055A0"
               className=' me-1'
               style={{ width: '30px', height: '30px' }}>
             </lord-icon>
@@ -795,27 +800,27 @@ const HomePage = () => {
 
                 <div class="grid grid-cols-3 fs-13 mt-2">
                   <div className='d-flex align-items-center mt-2'>
-                    <div className='hinh-vuong bg-primary rounded-2 me-1'></div>
+                    <div className='hinh-vuong bg-primary bg-opacity-25 rounded-2 me-1'></div>
                     Nhận khách
                   </div>
                   <div className='d-flex align-items-center mt-2'>
-                    <div className='hinh-vuong bg-success rounded-2 me-1'></div>
+                    <div className='hinh-vuong bg-success bg-opacity-25 rounded-2 me-1'></div>
                     Thanh toán
                   </div>
                   <div className='d-flex align-items-center mt-2'>
-                    <div className='hinh-vuong bg-warning rounded-2 me-1'></div>
+                    <div className='hinh-vuong bg-warning bg-opacity-25 rounded-2 me-1'></div>
                     Đợi duyệt
                   </div>
                   <div className='d-flex align-items-center mt-2'>
-                    <div className='hinh-vuong bg-info rounded-2 me-1'></div>
+                    <div className='hinh-vuong bg-info bg-opacity-25 rounded-2 me-1'></div>
                     Chờ duyệt
                   </div>
                   <div className='d-flex align-items-center mt-2'>
-                    <div className='hinh-vuong bg-danger rounded-2 me-1'></div>
+                    <div className='hinh-vuong bg-danger bg-opacity-25 rounded-2 me-1'></div>
                     Không duyệt
                   </div>
                   <div className='d-flex align-items-center mt-2'>
-                    <div className='hinh-vuong bg-secondary rounded-2 me-1'></div>
+                    <div className='hinh-vuong bg-secondary bg-opacity-25 rounded-2 me-1'></div>
                     Đã hủy
                   </div>
                 </div>
@@ -825,22 +830,22 @@ const HomePage = () => {
                       <>
                         <div onClick={() => { bookingDetail(invoiceDate.active); setSheetOpenedInvoices(true) }} className='mt-1  hieuung p-2 rounded-2 d-flex align-items-center fs-13'>
                           {(invoiceDate.process == 1 || invoiceDate.process == 100) &&
-                            <div className='bg-primary rounded-2' style={{ width: "35px", height: "35px" }}></div>
+                            <div className='bg-primary bg-opacity-25 rounded-2' style={{ width: "35px", height: "35px" }}></div>
                           }
                           {invoiceDate.process == 2 &&
-                            <div className='bg-warning rounded-2' style={{ width: "35px", height: "35px" }}></div>
+                            <div className='bg-warning bg-opacity-25 rounded-2' style={{ width: "35px", height: "35px" }}></div>
                           }
                           {invoiceDate.process == 3 || invoiceDate.process == 300 &&
-                            <div className='bg-secondary rounded-2' style={{ width: "35px", height: "35px" }}></div>
+                            <div className='bg-secondary bg-opacity-25 rounded-2' style={{ width: "35px", height: "35px" }}></div>
                           }
                           {invoiceDate.process == 20 &&
-                            <div className='bg-danger rounded-2' style={{ width: "35px", height: "35px" }}></div>
+                            <div className='bg-danger bg-opacity-25 rounded-2' style={{ width: "35px", height: "35px" }}></div>
                           }
                           {invoiceDate.process == 200 &&
-                            <div className='bg-success rounded-2' style={{ width: "35px", height: "35px" }}></div>
+                            <div className='bg-success bg-opacity-25 rounded-2' style={{ width: "35px", height: "35px" }}></div>
                           }
                           <div className='ms-2'>
-                            <div className='fw-bold mb-1 w-100 text-white '>{invoiceDate.name}<span className='fs-11 ms-2'>(Phòng {invoiceDate.room_name})</span></div>
+                            <div className='fw-bold mb-1 w-100 '>{invoiceDate.name}<span className='fs-11 ms-2'>(Phòng {invoiceDate.room_name})</span></div>
                             <div>{invoiceDate.date}</div>
                           </div>
                         </div>
@@ -867,7 +872,7 @@ const HomePage = () => {
                                 <div className='col-4 p-1 mt-2' onClick={() => { setSheetOpenebMenu(true); localStorage.setItem("HappyCorp_active_room", roomItem.active) }} key={index}>
                                   <div className=' position-relative' style={{
                                     // Thêm box-shadow để tạo viền phát sáng
-                                    boxShadow: '0 0 5px 0 #ff9700, 0 0 10px 0 #1fc5f7',
+                                    boxShadow: '0 0 5px 0 #ff9700, 0 0 10px 0 #0055A0',
                                     borderRadius: '8px',
                                     border: '0.5px solid #ff9700'
                                   }}>
@@ -977,7 +982,7 @@ const HomePage = () => {
                     Khu vực/ Phòng<div className='fw-bold'>V4</div>
                   </div>
                   <div className='d-flex justify-content-between align-items-center pb-2 mt-3 border-bottom'>
-                    Trạng thái<span className='px-2 pb-1 bg-primary rounded-pill text-white'>Đã nhận phòng</span>
+                    Trạng thái<span className='px-2 pb-1 bg-primary rounded-pill '>Đã nhận phòng</span>
                   </div>
                   <div className='d-flex justify-content-between align-items-center pb-2 mt-3 border-bottom'>
                     Người đặt<div className='fw-bold'>Jatbirat</div>

@@ -1,4 +1,4 @@
-import { Sheet, Toolbar, PageContent, Block, Link, Card, ListInput, List, Icon, Button, AccordionToggle, AccordionItem, AccordionContent } from "framework7-react";
+import { Sheet, Toolbar, PageContent, Block, Link, Card, ListInput, List, Icon, Button, AccordionToggle, AccordionItem, AccordionContent, f7 } from "framework7-react";
 import { useEffect, useState } from "react";
 import moment from 'moment';
 import SheetBooking1 from "./SheetBooking1";
@@ -137,11 +137,12 @@ export default function SheetMenu({ opened, onClose }) {
                 onSheetClosed={onClose}
             >
                 <Toolbar className="">
-                    <div className="left fw-bold d-flex align-items-center mb-3">
-                        <button
+                    <div className="left fw-bold d-flex align-items-center text-dark mb-3">
+                        <button 
                             className="rounded-circle border-0 bg-light  me-3 d-flex justify-content-center p-1"
                             style={{ width: "25px", height: "25px", lineHeight: "25px" }}
-                            onClick={() => f7.sheet.close()}
+                            onClick={() => {f7.sheet.close(); console.log(123);
+                            }}
                         >
                             <Icon f7="arrow_left" size='15px' className="icon-dark"></Icon>
 

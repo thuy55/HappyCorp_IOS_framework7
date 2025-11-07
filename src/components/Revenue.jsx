@@ -273,11 +273,17 @@ export default function SheetRevenue({ opened, onClose }) {
                 onSheetClosed={onClose}
             >
                 <Toolbar className="">
-                    <div className="left fw-bold d-flex align-items-center">
+                    <div className="left fw-bold d-flex align-items-center text-dark mb-3">
+                        <button 
+                            className="rounded-circle border-0 bg-light  me-3 d-flex justify-content-center p-1"
+                            style={{ width: "25px", height: "25px", lineHeight: "25px" }}
+                            onClick={() => {f7.sheet.close(); console.log(123);
+                            }}
+                        >
+                            <Icon f7="arrow_left" size='15px' className="icon-dark"></Icon>
+
+                        </button>
                         Doanh thu
-                    </div>
-                    <div className="right fs-13">
-                        <Link sheetClose>Close</Link>
                     </div>
                 </Toolbar>
                 <PageContent className="pb-5 pt-0">
@@ -439,25 +445,25 @@ export default function SheetRevenue({ opened, onClose }) {
                     {/* Statistics Cards */}
                     <div className="row mx-2 g-3 mb-4 mt-2">
                         <div className="col-4 p-1">
-                            <Card className="text-center m-1 p-3 px-1 border-0 shadow-none text-pink">
+                            <Card className="text-center m-1 p-3 px-1 border-1 shadow-none text-pink">
                                 <div
-                                    className="display-4 fw-bold mb-1"
+                                    className="display-4 fw-bold mb-1 text-pink"
                                 >
                                     0
                                 </div>
-                                <div className='fs-13'>Tổng </div>
+                                <div className='fs-13 text-pink'>Tổng </div>
                             </Card>
                         </div>
                         <div className="col-4 p-1">
-                            <Card className="text-center m-1 p-3 px-1 border-0 shadow-none  text-success">
-                                <div className="display-4 fw-bold mb-1">0</div>
-                                <div className='fs-13'>Đã thanh toán</div>
+                            <Card className="text-center m-1 p-3 px-1 border-1 shadow-none  ">
+                                <div className="display-4 fw-bold mb-1 text-success">0</div>
+                                <div className='fs-13 text-success'>Đã thanh toán</div>
                             </Card>
                         </div>
                         <div className="col-4 p-1">
-                            <Card className="text-center m-1 p-3 px-1 border-0 shadow-none text-secondary">
-                                <div className="display-4 fw-bold  mb-1">0</div>
-                                <div className='fs-13'>Đã huỷ</div>
+                            <Card className="text-center m-1 p-3 px-1 border-1 shadow-none ">
+                                <div className="display-4 fw-bold  mb-1 text-secondary">0</div>
+                                <div className='fs-13 text-secondary'>Đã huỷ</div>
                             </Card>
                         </div>
                     </div>
@@ -465,27 +471,27 @@ export default function SheetRevenue({ opened, onClose }) {
                     {/* Legend */}
                     <div class="grid grid-cols-3 fs-13 mt-2 px-3">
                         <div className='d-flex align-items-center mt-2'>
-                            <div className='hinh-vuong bg-primary rounded-2 me-1'></div>
+                            <div className='hinh-vuong bg-primary bg-opacity-25 rounded-2 me-1'></div>
                             Nhận khách
                         </div>
                         <div className='d-flex align-items-center mt-2'>
-                            <div className='hinh-vuong bg-success rounded-2 me-1'></div>
+                            <div className='hinh-vuong bg-success bg-opacity-25 rounded-2 me-1'></div>
                             Thanh toán
                         </div>
                         <div className='d-flex align-items-center mt-2'>
-                            <div className='hinh-vuong bg-warning rounded-2 me-1'></div>
+                            <div className='hinh-vuong bg-warning bg-opacity-25 rounded-2 me-1'></div>
                             Đợi duyệt
                         </div>
                         <div className='d-flex align-items-center mt-2'>
-                            <div className='hinh-vuong bg-info rounded-2 me-1'></div>
+                            <div className='hinh-vuong bg-info bg-opacity-25 rounded-2 me-1'></div>
                             Chờ duyệt
                         </div>
                         <div className='d-flex align-items-center mt-2'>
-                            <div className='hinh-vuong bg-danger rounded-2 me-1'></div>
+                            <div className='hinh-vuong bg-danger bg-opacity-25 rounded-2 me-1'></div>
                             Không duyệt
                         </div>
                         <div className='d-flex align-items-center mt-2'>
-                            <div className='hinh-vuong bg-secondary rounded-2 me-1'></div>
+                            <div className='hinh-vuong bg-secondary bg-opacity-25 rounded-2 me-1'></div>
                             Đã hủy
                         </div>
                     </div>
@@ -502,19 +508,19 @@ export default function SheetRevenue({ opened, onClose }) {
                                                 Phòng: {invoice.room_name}
                                                 <div>
                                                     {invoice.process == 1 || invoice.process == 100 &&
-                                                        <span className='text-primary'>Nhận khách</span>
+                                                        <span className='text-primary bg-opacity-25'>Nhận khách</span>
                                                     }
                                                     {invoice.process == 2 &&
-                                                        <span className='text-warning'>Đợi duyệt</span>
+                                                        <span className='text-warning bg-opacity-25'>Đợi duyệt</span>
                                                     }
                                                     {invoice.process == 3 || invoice.process == 300 &&
-                                                        <span className='text-secondary'>Đã hủy</span>
+                                                        <span className='text-secondary bg-opacity-25'>Đã hủy</span>
                                                     }
                                                     {invoice.process == 20 &&
-                                                        <span className='text-danger'>Đã hủy</span>
+                                                        <span className='text-danger bg-opacity-25'>Đã hủy</span>
                                                     }
                                                     {invoice.process == 200 &&
-                                                        <span className='text-success'>Đã hoàn tất</span>
+                                                        <span className='text-success bg-opacity-25'>Đã hoàn tất</span>
                                                     }
                                                 </div>
                                             </div>

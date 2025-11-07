@@ -1,4 +1,4 @@
-import { Sheet, Toolbar, PageContent, Block, Link, Card, ListInput, List, Icon, Button, Segmented, Popover, ListItem } from "framework7-react";
+import { Sheet, Toolbar, PageContent, Block, Link, Card, ListInput, List, Icon, Button, Segmented, Popover, ListItem, f7 } from "framework7-react";
 import { useEffect, useState } from "react";
 import moment from 'moment';
 import SheetBookingCompleted from "./BookingCompleted";
@@ -288,7 +288,7 @@ export default function SheetBooking1({ opened, onClose }) {
                 onSheetClosed={onClose}
             >
                 <Toolbar className="">
-                    <div className="left fw-bold d-flex align-items-center mb-3">
+                    <div className="left fw-bold d-flex align-items-center text-dark mb-3">
                         <button
                             className="rounded-circle border-0 bg-light  me-3 d-flex justify-content-center p-1"
                             style={{ width: "25px", height: "25px", lineHeight: "25px" }}
@@ -387,7 +387,7 @@ export default function SheetBooking1({ opened, onClose }) {
                                     slot="media"
                                     src="https://cdn.lordicon.com/shcfcebj.json"
                                     trigger="loop"
-                                    colors="primary:#1fc5f7,secondary:#1fc5f7"
+                                    colors="primary:#0055A0,secondary:#0055A0"
                                     style={{ width: '20px', height: '20px' }}
                                 ></lord-icon>
                             </span>
@@ -411,7 +411,7 @@ export default function SheetBooking1({ opened, onClose }) {
                                     slot="media"
                                     src="https://cdn.lordicon.com/sjoccsdj.json"
                                     trigger="loop"
-                                    colors="primary:#1fc5f7,primary:#1fc5f7,secondary:#1fc5f7"
+                                    colors="primary:#0055A0,primary:#0055A0,secondary:#0055A0"
                                     style={{ width: '20px', height: '20px' }}
                                 ></lord-icon>
                             </Link>
@@ -430,7 +430,7 @@ export default function SheetBooking1({ opened, onClose }) {
                                     slot="media"
                                     src="https://cdn.lordicon.com/shcfcebj.json"
                                     trigger="loop"
-                                    colors="primary:#1fc5f7,secondary:#1fc5f7"
+                                    colors="primary:#0055A0,secondary:#0055A0"
                                     style={{ width: '20px', height: '20px' }}
                                 ></lord-icon>
                             </span>
@@ -462,7 +462,7 @@ export default function SheetBooking1({ opened, onClose }) {
                                     slot="media"
                                     src="https://cdn.lordicon.com/shcfcebj.json"
                                     trigger="loop"
-                                    colors="primary:#1fc5f7,secondary:#1fc5f7"
+                                    colors="primary:#0055A0,secondary:#0055A0"
                                     style={{ width: '20px', height: '20px' }}
                                 ></lord-icon>
                             </span>
@@ -487,7 +487,7 @@ export default function SheetBooking1({ opened, onClose }) {
                                     slot="media"
                                     src="https://cdn.lordicon.com/shcfcebj.json"
                                     trigger="loop"
-                                    colors="primary:#1fc5f7,secondary:#1fc5f7"
+                                    colors="primary:#0055A0,secondary:#0055A0"
                                     style={{ width: '20px', height: '20px' }}
                                 ></lord-icon>
                             </span>
@@ -514,7 +514,7 @@ export default function SheetBooking1({ opened, onClose }) {
                                     slot="media"
                                     src="https://cdn.lordicon.com/shcfcebj.json"
                                     trigger="loop"
-                                    colors="primary:#1fc5f7,secondary:#1fc5f7"
+                                    colors="primary:#0055A0,secondary:#0055A0"
                                     style={{ width: '20px', height: '20px' }}
                                 ></lord-icon>
                             </span>
@@ -547,7 +547,7 @@ export default function SheetBooking1({ opened, onClose }) {
                 </PageContent>
                 <footer className="fixed-bottom p-3 py-2 ">
                     <div className="grid grid-cols-2 grid-gap">
-                        <Button sheetClose className="bg-secondary bg-opacity-25 p-3 rounded-pill text-white fs-15" onClick={()=>{handleCloseAllModals()}}>Hủy đơn</Button>
+                        <Button sheetClose className="bg-light p-3 rounded-pill text-dark fs-15" onClick={()=>{handleCloseAllModals()}}>Hủy đơn</Button>
                         <Button className="bg-pink p-3 rounded-pill text-white fs-15" onClick={() => { booking(); }}>Hoàn thành</Button>
                     </div>
                 </footer>
@@ -565,7 +565,7 @@ export default function SheetBooking1({ opened, onClose }) {
                             <lord-icon
                                 src="https://cdn.lordicon.com/wjyqkiew.json"
                                 trigger="loop"
-                                colors="primary:#1fc5f7,secondary:#1fc5f7"
+                                colors="primary:#0055A0,secondary:#0055A0"
                                 className=' me-2'
                                 style={{ width: '30px', height: '30px' }}>
                             </lord-icon>

@@ -11,7 +11,7 @@ export default function SheetEndow({ opened, onClose }) {
                 onSheetClosed={onClose}
             >
                 <Toolbar className="border border-0">
-                    <div className="left fw-bold d-flex align-items-center mb-3">
+                    <div className="left fw-bold d-flex align-items-center text-dark mb-3">
                         <button
                             className="rounded-circle border-0 bg-light  me-3 d-flex justify-content-center p-1"
                             style={{ width: "25px", height: "25px", lineHeight: "25px" }}
@@ -25,7 +25,7 @@ export default function SheetEndow({ opened, onClose }) {
                 </Toolbar>
                 <PageContent className="pb-5">
 
-                    <div className=' ' style={{backgroundColor:"#292579"}}>
+                    <div className=' ' style={{backgroundColor:"#8CC1E9"}}>
                         <div className="row w-100">
 
                             <div className='col-7 fs-5 fw-bold'>

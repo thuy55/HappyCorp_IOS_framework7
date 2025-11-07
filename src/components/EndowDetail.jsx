@@ -80,9 +80,9 @@ export default function SheetEndowDetail({ opened, onClose }) {
                             </div>
 
                         </Card>
-                        <div className="d-flex justify-content-end px-3">
+                        {/* <div className="d-flex justify-content-end px-3">
                             <Button sheetClose className="bg-secondary bg-opacity-25 p-3 rounded-pill text-white fs-15" >Đóng</Button>
-                        </div>
+                        </div> */}
                     </List>
 
 

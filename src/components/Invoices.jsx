@@ -70,9 +70,9 @@ export default function SheetInvoices({ opened, onClose }) {
             >
                 <Toolbar className="">
                     
-                    <div className="left fw-bold d-flex align-items-center mb-3">
+                    <div className="left fw-bold d-flex align-items-center text-dark mb-3">
                         <button
-                            className="rounded-circle border-0 bg-light  me-3 d-flex justify-content-center p-1"
+                            className="rounded-circle border-1 bg-light  me-3 d-flex justify-content-center p-1"
                             style={{ width: "25px", height: "25px", lineHeight: "25px" }}
                             onClick={() => f7.sheet.close()}
                         >
@@ -89,7 +89,7 @@ export default function SheetInvoices({ opened, onClose }) {
                         </div>
                     </div> */}
                     {/* <div className='d-flex justify-content-center mt-2 fs-13 fw-bold'>#0000111</div> */}
-                    <Card className="rounded-4 p-3 shadow-none border border-0 fs-13">
+                    <Card className="rounded-4 p-3 shadow-none border border-1 fs-13">
                         <div className=" fs-13 text-pink mb-2 fw-bold">
                             Thông tin khách hàng
                         </div>
@@ -106,7 +106,7 @@ export default function SheetInvoices({ opened, onClose }) {
                             Xác nhận <div className='fw-bold'>Đã xác nhận qua Zalo</div>
                         </div>
                     </Card>
-                    <Card className="rounded-4 p-3 shadow-none border border-0 fs-13">
+                    <Card className="rounded-4 p-3 shadow-none border border-1 fs-13">
                         <div className=" fs-13 text-pink mb-2 fw-bold">
                             Thông tin đặt bàn
                         </div>
@@ -147,7 +147,7 @@ export default function SheetInvoices({ opened, onClose }) {
                             Ghi chú <div className='fw-bold'>{invoices && invoices.notes}</div>
                         </div>
                     </Card>
-                    <Card className="rounded-4 p-3 shadow-none border border-0 fs-13">
+                    <Card className="rounded-4 p-3 shadow-none border border-1 fs-13">
                         <div className=" fs-13 text-pink mb-2 fw-bold">
                             Chi tiết dịch vụ/ Món ăn
                         </div>
@@ -171,7 +171,7 @@ export default function SheetInvoices({ opened, onClose }) {
                             </>
                         )}
                     </Card>
-                    <Card className="rounded-4 p-3 shadow-none border border-0 fs-13">
+                    <Card className="rounded-4 p-3 shadow-none border border-1 fs-13">
                         <div className=" fs-13 text-pink mb-2 fw-bold">
                             Thông tin thanh toán
                         </div>
@@ -213,7 +213,7 @@ export default function SheetInvoices({ opened, onClose }) {
                         </div>
 
                     </Card>
-                    <Card className="rounded-4 p-3 shadow-none border border-0 fs-13 mb-5">
+                    <Card className="rounded-4 p-3 shadow-none border border-1 fs-13 mb-5">
                         <div className=" fs-13 text-pink mb-2 fw-bold">
                             Phương thức thanh toán
                         </div>
@@ -239,10 +239,10 @@ export default function SheetInvoices({ opened, onClose }) {
                 {/* <footer className="fixed-bottom p-3 py-1 ">
                     <div className=' grid grid-cols-2 grid-gap px-2 my-2'>
                         <div>
-                            <button className='border border-0 rounded-pill p-3 bg-warning fs-13 fw-đơnd'>Tải hóa đơn</button>
+                            <button className='border border-1 rounded-pill p-3 bg-warning fs-13 fw-đơnd'>Tải hóa đơn</button>
                         </div>
                         <div>
-                            <button className='border border-0 rounded-pill p-3 bg-warning fs-13 fw-đơnd'>Chia sẻ</button>
+                            <button className='border border-1 rounded-pill p-3 bg-warning fs-13 fw-đơnd'>Chia sẻ</button>
                         </div>
                     </div>
                 </footer> */}

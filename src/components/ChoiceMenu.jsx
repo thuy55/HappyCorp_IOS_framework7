@@ -1,4 +1,4 @@
-import { Sheet, Toolbar, PageContent, Block, Link, Card, ListInput, List, Icon, Button, AccordionToggle, AccordionItem, AccordionContent } from "framework7-react";
+import { Sheet, Toolbar, PageContent, Block, Link, Card, ListInput, List, Icon, Button, AccordionToggle, AccordionItem, AccordionContent, f7 } from "framework7-react";
 import { useEffect, useState } from "react";
 import moment from 'moment';
 import SheetBooking1 from "./SheetBooking1";
@@ -59,7 +59,7 @@ export default function SheetChoiceMenu({ opened, onClose }) {
                 }}
             >
                 <Toolbar className="">
-                    <div className="left fw-bold d-flex align-items-center mb-3">
+                    <div className="left fw-bold d-flex align-items-center text-dark mb-3">
                         <button
                             className="rounded-circle border-0 bg-light  me-3 d-flex justify-content-center p-1"
                             style={{ width: "25px", height: "25px", lineHeight: "25px" }}

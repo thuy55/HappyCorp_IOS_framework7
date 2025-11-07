@@ -25,6 +25,7 @@ import SocialSavePage from '../pages/social_save.jsx';
 import TestPage from '../pages/test.jsx';
 import BookingPage from '../pages/booking.jsx';
 import ChatPage from '../pages/Chat.jsx';
+import RegisterPage from '../pages/Register.jsx';
 
 var routes = [
   {
@@ -64,10 +65,10 @@ var routes = [
     path: '/login/',
     component: LoginPage,
   },
-  // {
-  //   path: '/register/',
-  //   component: RegisterPage,
-  // },
+  {
+    path: '/register/',
+    component: RegisterPage,
+  },
   // {
   //   path: '/forgot-password/',
   //   component: ForgotPasswordPage,

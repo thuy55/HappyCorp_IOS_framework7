@@ -21,7 +21,7 @@ export default function CommonNavbar() {
           <lord-icon
             src="https://cdn.lordicon.com/tjjwskjx.json"
             trigger="loop"
-            colors="primary:#1fc5f7,secondary:#1fc5f7"
+            colors="primary:#0055A0,secondary:#0055A0"
             className='size-icon me-2'>
           </lord-icon></Link>
       </NavRight>

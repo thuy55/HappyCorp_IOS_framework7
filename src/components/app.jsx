@@ -118,7 +118,7 @@ const MyApp = () => {
 
   const getIconColor = (tabName) => {
   return currentPath === tabName
-    ? 'primary:#1fc5f7,secondary:#1fc5f7'
+    ? 'primary:#0055A0,secondary:#0055A0'
     : 'primary:#999999,secondary:#999999';
 };
 
@@ -296,14 +296,14 @@ function Logout() {
       <Panel left cover>
         <View>
           <Page>
-            <Navbar className="custom-navbar">
+            <Navbar  className='bg-xanh-menu'>
               <div className='text-center pb-1'>
               <img src='../image/happy-corp-logo.png' className='w-25'></img>
               </div>
             </Navbar>
 
 
-            <BlockTitle className='mb-1  mt-4 fs-13 text-white'>Quản lý</BlockTitle>
+            <BlockTitle className='mb-1  mt-4 fs-13'>Quản lý</BlockTitle>
             
             <List dividersIos={false} simpleList inset className='fs-13 list-custom mb-3'>
               {/* <ListItem  link="/account/" selected={selected === 'account'}
@@ -319,7 +319,7 @@ function Logout() {
                 <lord-icon
                   src="https://cdn.lordicon.com/shcfcebj.json"
                   trigger="loop"
-                  colors="primary:#1fc5f7,secondary:#1fc5f7"
+                  colors="primary:#0055A0,secondary:#0055A0"
                   className=' me-2'
                   style={{ width: '25px', height: '25px' }}
                 />
@@ -332,7 +332,7 @@ function Logout() {
                   <lord-icon
                     src="https://cdn.lordicon.com/apmrcxtj.json"
                     trigger="loop"
-                    colors="primary:#1fc5f7,secondary:#1fc5f7"
+                    colors="primary:#0055A0,secondary:#0055A0"
                     className=' me-2'
                     style={{ width: '25px', height: '25px' }}>
                   </lord-icon>Thông báo
@@ -343,7 +343,7 @@ function Logout() {
                   <lord-icon
                     src="https://cdn.lordicon.com/jectmwqf.json"
                     trigger="loop"
-                    colors="primary:#1fc5f7,secondary:#1fc5f7"
+                    colors="primary:#0055A0,secondary:#0055A0"
                     className=' me-2'
                     style={{ width: '25px', height: '25px' }}>
                   </lord-icon>Nhật ký
@@ -358,7 +358,7 @@ function Logout() {
                 <lord-icon
                   src="https://cdn.lordicon.com/bsdkzyjd.json"
                   trigger="loop"
-                  colors="primary:#1fc5f7,secondary:#1fc5f7"
+                  colors="primary:#0055A0,secondary:#0055A0"
                   className="me-2"
                   style={{ width: "25px", height: "25px" }}
                 />
@@ -371,7 +371,7 @@ function Logout() {
                 <lord-icon
                   src="https://cdn.lordicon.com/yodwgokk.json"
                   trigger="loop"
-                  colors="primary:#1fc5f7,secondary:#1fc5f7"
+                  colors="primary:#0055A0,secondary:#0055A0"
                   className="me-2"
                   style={{ width: "25px", height: "25px" }}
                 />
@@ -381,14 +381,14 @@ function Logout() {
             </List> */}
                   
 
-            <BlockTitle className='mb-1  mt-3 fs-13 text-white'>Ngôn ngữ</BlockTitle>
+            <BlockTitle className='mb-1  mt-3 fs-13 '>Ngôn ngữ</BlockTitle>
             <List dividersIos={false} simpleList inset className='fs-13 list-custom mb-3'>
               <ListItem>
                 <Link>
                   <lord-icon
                     src="https://cdn.lordicon.com/bsdkzyjd.json"
                     trigger="loop"
-                    colors="primary:#1fc5f7,secondary:#1fc5f7"
+                    colors="primary:#0055A0,secondary:#0055A0"
                     className=' me-2'
                     style={{ width: '25px', height: '25px' }}>
                   </lord-icon>Tiếng Việt
@@ -399,7 +399,7 @@ function Logout() {
                   <lord-icon
                     src="https://cdn.lordicon.com/bsdkzyjd.json"
                     trigger="loop"
-                    colors="primary:#1fc5f7,secondary:#1fc5f7"
+                    colors="primary:#0055A0,secondary:#0055A0"
                     className=' me-2'
                     style={{ width: '25px', height: '25px' }}>
                   </lord-icon> Tiếng Anh
@@ -410,7 +410,7 @@ function Logout() {
               <button className='p-2 rounded-pill bg-pink fs-13 border border-0 text-white fw-bold' onClick={()=>{Logout()}}>Đăng xuất</button>
             </div>
             <div className='fixed-bottom '>
-              <Card className=" border border-0 bg-danger m-0 rounded-0 fs-13 p-3  text-dark" style={{backgroundImage: 'url(../image/nen.png)', backgroundSize: 'cover', backgroundPosition: 'center'}}>
+              <div className=" border border-0 m-0 rounded-0 fs-13 p-3 bg-xanh-menu text-dark" >
            
                 {/* <div>
                   <img src='../image/happy-corp-logo.png' className='w-25' />
@@ -439,7 +439,7 @@ function Logout() {
               
               ll Rights Reserved | Privacy Policy | Sitemap | Website Terms of Use
                                                 </div>
-            </Card>
+            </div>
         </div>
         </Page>
         </View >

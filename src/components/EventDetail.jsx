@@ -93,7 +93,7 @@ export default function SheetEventDetail({ opened, onClose }) {
                     <List className='m-2 mt-3'>
                         <Card className='rounded-4 border border-0 p-2 shadow-sm fs-13 m-2'>
                             <div className='fw-bold'>Thông tin sự kiện</div>
-                            <div className="m-2 text-white" style={{ whiteSpace: "pre-line" }}>
+                            <div className="m-2" style={{ whiteSpace: "pre-line" }}>
                                 {`✨ 90’s HOUSE – BIỂU TƯỢNG MỚI CỦA GIẢI TRÍ & ẨM THỰC CAO CẤP TẠI TP.HCM ✨
                                 Một tuyệt phẩm sắp chính thức trình làng từ Happy Corp – phát triển mạnh mẽ trong lĩnh vực F&B và giải trí đẳng cấp.
                                 📍 90’s House – nơi giao thoa giữa ẩm thực cao cấp tinh tế, âm nhạc đỉnh cao và dịch vụ cá nhân hóa chưa từng có tại Hồ Chí Minh, hứa hẹn sẽ trở thành điểm đến hàng đầu cho giới nightlife tại Sài Gòn.
