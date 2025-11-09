@@ -41,6 +41,7 @@ import SheetInvoices from '../components/Invoices';
 import { useTranslation } from 'react-i18next';
 import SheetBrand from '../components/brand';
 import axios from 'axios';
+import SheetBrandDetail from '../components/brandDetail';
 
 const HomePage = () => {
   const { t, i18n } = useTranslation();
@@ -117,6 +118,8 @@ const HomePage = () => {
   const [sheetOpenedInvoices, setSheetOpenedInvoices] = useState(false);
 
   const [sheetOpenedBrand, setSheetOpenedBrand] = useState(false);
+
+  const [sheetOpenBrandDetail, setSheetOpenBrandDetail] = useState(false);
 
   // tháng hiện tại
 
@@ -340,30 +343,27 @@ const HomePage = () => {
         </div>
 
         <div className="grid grid-cols-4 px-2 mt-4">
-          <div>
-            <div className='text-center rounded-4  p-1'>
-              <img src='../image/brand1.gif' style={{width:"40%"}}></img>
-              <div className=' fs-13 mt-1'>90S HOUSE</div>
-            </div>
+
+          <div className='text-center rounded-4  p-1' style={{ cursor: "pointer" }} onClick={() => { setSheetOpenBrandDetail(true); localStorage.setItem("happyCorp_brand", 1); localStorage.setItem("happyCorp_brand_name", "90S HOUSE") }}>
+            <img src='../image/brand1.gif' style={{ width: "40%" }}  ></img>
+            <div className=' fs-13 mt-1'>90S HOUSE</div>
           </div>
-          <div>
-            <div className='text-center rounded-4  p-1'>
-              <img src='../image/brand2.gif'  style={{width:"40%"}}></img>
-              <div className=' fs-13 mt-1'>LIMITED</div>
-            </div>
+
+          <div className='text-center rounded-4  p-1' style={{ cursor: "pointer" }} onClick={() => { setSheetOpenBrandDetail(true); localStorage.setItem("happyCorp_brand", 2); localStorage.setItem("happyCorp_brand_name", "LIMITED") }}>
+            <img src='../image/brand2.gif' style={{ width: "40%" }}></img>
+            <div className=' fs-13 mt-1'>LIMITED</div>
           </div>
-          <div>
-            <div className='text-center rounded-4  p-1'>
-              <img src='../image/brand3.gif' style={{width:"40%"}}></img>
-              <div className=' fs-13 mt-1'>ATLANTIS</div>
-            </div>
+
+          <div className='text-center rounded-4  p-1' style={{ cursor: "pointer" }} onClick={() => { setSheetOpenBrandDetail(true); localStorage.setItem("happyCorp_brand", 3); localStorage.setItem("happyCorp_brand_name", "ATLANTIS") }}>
+            <img src='../image/brand3.gif' style={{ width: "40%" }}></img>
+            <div className=' fs-13 mt-1'>ATLANTIS</div>
           </div>
-          <div>
-            <div className='text-center rounded-4  p-1'>
-              <img src='../image/brand4.gif' style={{width:"40%"}}></img>
-              <div className=' fs-13 mt-1'>HẠC CẦM</div>
-            </div>
+
+          <div className='text-center rounded-4  p-1' style={{ cursor: "pointer" }} onClick={() => { setSheetOpenBrandDetail(true); localStorage.setItem("happyCorp_brand", 5); localStorage.setItem("happyCorp_brand_name", "HẠC CẦM") }}>
+            <img src='../image/brand4.gif' style={{ width: "40%" }}></img>
+            <div className=' fs-13 mt-1'>HẠC CẦM</div>
           </div>
+
         </div>
 
         <List className='m-0 mt-4'>
@@ -482,7 +482,7 @@ const HomePage = () => {
             style={{ width: '30px', height: '30px' }}>
           </lord-icon>
           Sự kiện</Link>
-        <swiper-container 
+        <swiper-container
           loop
           autoplay='{"delay":5000, "disableOnInteraction": false}'
           class=" mt-3 demo-swiper-multiple demo-swiper-multiple-auto ps-3"
@@ -492,56 +492,56 @@ const HomePage = () => {
             <div onClick={() => setSheetOpenedEventDetail(true)}>
               <img src='https://wallpaperaccess.com/full/2300142.jpg' className='w-100'></img>
               <div className='fw-bold mt-2'>ATMOS FEAT.RHYDER | 20.11.2025</div>
-              <div className='mt-3' style={{color:"#0055A0"}}>2.500.000 - 10.000.000</div>
+              <div className='mt-3' style={{ color: "#0055A0" }}>2.500.000 - 10.000.000</div>
               <div className='border border-bottom border-dark my-2' style={{ width: '30%' }}></div>
               <div className='limited-lines2'>Trung Thu – khi ánh trăng soi lên những cuộc vui thượng lưu tại 90S House
                 Trăng rọi qua khung cửa, hương rượu khẽ nghiêng trong tiếng cười rộn rã.
                 Không gian 90S House đêm nay khoác lên sắc màu Trung Thu - ấm áp, tinh tế và đầy mê hoặc.</div>
-                <div className='d-flex justify-content-end mt-2'>
-                  <div className='d-flex align-items-center fs-11 fw-bold'>Xem thêm <Icon f7='arrow_right' className='ms-1' size="15px"></Icon> </div>
-                </div>
+              <div className='d-flex justify-content-end mt-2'>
+                <div className='d-flex align-items-center fs-11 fw-bold'>Xem thêm <Icon f7='arrow_right' className='ms-1' size="15px"></Icon> </div>
+              </div>
             </div>
           </swiper-slide>
           <swiper-slide>
             <div onClick={() => setSheetOpenedEventDetail(true)}>
               <img src='https://wallpaperaccess.com/full/2300142.jpg' className='w-100'></img>
               <div className='fw-bold mt-2'>ATMOS FEAT.RHYDER | 20.11.2025</div>
-              <div className='mt-3' style={{color:"#0055A0"}}>2.500.000 - 10.000.000</div>
+              <div className='mt-3' style={{ color: "#0055A0" }}>2.500.000 - 10.000.000</div>
               <div className='border border-bottom border-dark my-2' style={{ width: '30%' }}></div>
               <div className='limited-lines2'>Trung Thu – khi ánh trăng soi lên những cuộc vui thượng lưu tại 90S House
                 Trăng rọi qua khung cửa, hương rượu khẽ nghiêng trong tiếng cười rộn rã.
                 Không gian 90S House đêm nay khoác lên sắc màu Trung Thu - ấm áp, tinh tế và đầy mê hoặc.</div>
-                <div className='d-flex justify-content-end mt-2 me-2'>
-                  <div className='d-flex align-items-center fs-11 fw-bold'>Xem thêm <Icon f7='arrow_right' className='ms-1' size="15px"></Icon> </div>
-                </div>
+              <div className='d-flex justify-content-end mt-2 me-2'>
+                <div className='d-flex align-items-center fs-11 fw-bold'>Xem thêm <Icon f7='arrow_right' className='ms-1' size="15px"></Icon> </div>
+              </div>
             </div>
           </swiper-slide>
           <swiper-slide>
             <div onClick={() => setSheetOpenedEventDetail(true)}>
               <img src='https://wallpaperaccess.com/full/2300142.jpg' className='w-100'></img>
               <div className='fw-bold mt-2'>ATMOS FEAT.RHYDER | 20.11.2025</div>
-              <div className='mt-3' style={{color:"#0055A0"}}>2.500.000 - 10.000.000</div>
+              <div className='mt-3' style={{ color: "#0055A0" }}>2.500.000 - 10.000.000</div>
               <div className='border border-bottom border-dark my-2' style={{ width: '30%' }}></div>
               <div className='limited-lines2'>Trung Thu – khi ánh trăng soi lên những cuộc vui thượng lưu tại 90S House
                 Trăng rọi qua khung cửa, hương rượu khẽ nghiêng trong tiếng cười rộn rã.
                 Không gian 90S House đêm nay khoác lên sắc màu Trung Thu - ấm áp, tinh tế và đầy mê hoặc.</div>
-                <div className='d-flex justify-content-end mt-2'>
-                  <div className='d-flex align-items-center fs-11 fw-bold'>Xem thêm <Icon f7='arrow_right' className='ms-1' size="15px"></Icon> </div>
-                </div>
+              <div className='d-flex justify-content-end mt-2'>
+                <div className='d-flex align-items-center fs-11 fw-bold'>Xem thêm <Icon f7='arrow_right' className='ms-1' size="15px"></Icon> </div>
+              </div>
             </div>
           </swiper-slide>
           <swiper-slide>
             <div onClick={() => setSheetOpenedEventDetail(true)}>
               <img src='https://wallpaperaccess.com/full/2300142.jpg' className='w-100'></img>
               <div className='fw-bold mt-2'>ATMOS FEAT.RHYDER | 20.11.2025</div>
-              <div className='mt-3' style={{color:"#0055A0"}}>2.500.000 - 10.000.000</div>
+              <div className='mt-3' style={{ color: "#0055A0" }}>2.500.000 - 10.000.000</div>
               <div className='border border-bottom border-dark my-2' style={{ width: '30%' }}></div>
               <div className='limited-lines2'>Trung Thu – khi ánh trăng soi lên những cuộc vui thượng lưu tại 90S House
                 Trăng rọi qua khung cửa, hương rượu khẽ nghiêng trong tiếng cười rộn rã.
                 Không gian 90S House đêm nay khoác lên sắc màu Trung Thu - ấm áp, tinh tế và đầy mê hoặc.</div>
-                <div className='d-flex justify-content-end mt-2'>
-                  <div className='d-flex align-items-center fs-11 fw-bold'>Xem thêm <Icon f7='arrow_right' className='ms-1' size="15px"></Icon> </div>
-                </div>
+              <div className='d-flex justify-content-end mt-2'>
+                <div className='d-flex align-items-center fs-11 fw-bold'>Xem thêm <Icon f7='arrow_right' className='ms-1' size="15px"></Icon> </div>
+              </div>
             </div>
           </swiper-slide>
         </swiper-container>
@@ -1050,6 +1050,11 @@ const HomePage = () => {
       <SheetRoomDetail
         opened={sheetOpenebMenu}
         onClose={() => setSheetOpenebMenu(false)}
+      />
+
+      <SheetBrandDetail
+        opened={sheetOpenBrandDetail}
+        onClose={() => setSheetOpenBrandDetail(false)}
       />
     </Page>
 
