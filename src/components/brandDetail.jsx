@@ -82,6 +82,265 @@ export default function SheetBrandDetail({ opened, onClose }) {
     };
 
     const defaultImageUrl = 'https://img.freepik.com/premium-photo/elite-karaoke-suite-with-velvet-ropes-bartender_416256-24715.jpg';
+
+    const data = [
+        {
+            brand: 1,
+            menu: [
+                {
+                    "image": "../MENU1/IMG_8481.JPG",
+                    "name": "Menu-COGNAC-GIN-VODKA-TEQUILA",
+                    "price": 0,
+                    "content": "Combo món ăn sang trọng thường kết hợp các món khai vị tinh tế, món chính cao cấp với nguyên liệu hảo hạng."
+                },
+                {
+                    "image": "../MENU1/IMG_8483.JPG",
+                    "name": "CIGAR",
+                    "price": 0,
+                    "content": "Combo món ăn sang trọng thường kết hợp các món khai vị tinh tế, món chính cao cấp với nguyên liệu hảo hạng."
+                },
+                {
+                    "image": "../MENU1/IMG_8485.JPG",
+                    "name": "Menu Private Lounge",
+                    "price": 0,
+                    "content": "Combo món ăn sang trọng thường kết hợp các món khai vị tinh tế, món chính cao cấp với nguyên liệu hảo hạng."
+                },
+                {
+                    "image": "../MENU1/IMG_8486.JPG",
+                    "name": "Introduction",
+                    "price": 0,
+                    "content": "Combo món ăn sang trọng thường kết hợp các món khai vị tinh tế, món chính cao cấp với nguyên liệu hảo hạng."
+                },
+                {
+                    "image": "../MENU1/IMG_8487.JPG",
+                    "name": "Standard Room",
+                    "price": 0,
+                    "content": "Combo món ăn sang trọng thường kết hợp các món khai vị tinh tế, món chính cao cấp với nguyên liệu hảo hạng."
+                },
+                {
+                    "image": "../MENU1/IMG_8488.JPG",
+                    "name": "Diamond Room",
+                    "price": 0,
+                    "content": "Trải nghiệm ẩm thực châu Âu với gan ngỗng áp chảo, mì Ý nấm truffle và bò bít tết sốt rượu vang."
+                },
+                {
+                    "image": "../MENU1/IMG_8492.JPG",
+                    "name": "Menu 90S Gold",
+                    "price": 27500,
+                    "content": "Combo món ăn sang trọng thường kết hợp các món khai vị tinh tế, món chính cao cấp với nguyên liệu hảo hạng."
+                },
+                {
+                    "image": "../MENU1/IMG_8493.JPG",
+                    "name": "Menu Food",
+                    "price": 0,
+                    "content": "Thư giãn với các loại trà thượng hạng, bánh ngọt Pháp và sandwich nhỏ xinh trong không gian sang trọng."
+                },
+                {
+                    "image": "../MENU1/IMG_8494.JPG",
+                    "name": "Menu Food 2",
+                    "price": 6800000,
+                    "content": "Hành trình ẩm thực dọc miền đất nước với phở Hà Nội, bún bò Huế và cơm tấm Sài Gòn."
+                },
+                {
+                    "image": "../MENU1/IMG_8496.JPG",
+                    "name": "Dried Stock",
+                    "price": 0,
+                    "content": "Các món ăn nhỏ gọn, dễ cầm tay, phù hợp cho các bữa tiệc đứng, hội nghị hay sự kiện đặc biệt."
+                },
+                {
+                    "image": "../MENU1/IMG_8497.JPG",
+                    "name": "Menu Drink",
+                    "price": 0,
+                    "content": "Thỏa sức lựa chọn với hàng chục món ăn đa dạng từ khai vị, món chính đến tráng miệng hấp dẫn."
+                },
+                {
+                    "image": "../MENU1/IMG_8498.JPG",
+                    "name": "Menu Drink 2",
+                    "price": 0,
+                    "content": "Bữa trưa dinh dưỡng và tiện lợi cho dân văn phòng với thực đơn thay đổi mỗi ngày."
+                },
+                {
+                    "image": "../MENU1/IMG_8502.JPG",
+                    "name": "Thank You",
+                    "price": 0,
+                    "content": "Thưởng thức các món ăn vặt đường phố nổi tiếng như bánh tráng trộn, cá viên chiên, trà sữa..."
+                },
+                {
+                    "image": "../MENU1/IMG_8628.JPG",
+                    "name": "Private Room Entertaiment Hour",
+                    "price": 0,
+                    "content": "Combo bao gồm bánh kem, gà rán, pizza và nước ngọt, mang đến bữa tiệc sinh nhật đáng nhớ cho bé."
+                },
+                {
+                    "image": "../MENU1/IMG_8629.JPG",
+                    "name": "Menu Ace Golden",
+                    "price": 6200000,
+                    "content": "Trải nghiệm vị cay đặc trưng của ẩm thực Hàn với tokbokki, kim chi, gà cay phô mai và cơm trộn."
+                },
+                {
+                    "image": "../MENU1/IMG_8630.JPG",
+                    "name": "Menu 90S Brevilege",
+                    "price": 3200000,
+                    "content": "Khởi đầu ngày mới tràn đầy năng lượng với dimsum, há cảo, bánh bao và cháo nóng hổi."
+                },
+                {
+                    "image": "../MENU1/IMG_8634.JPG",
+                    "name": "Menu 90S Brevilege 2",
+                    "price": 11000000,
+                    "content": "Bữa tối dưới ánh nến dành cho 2 người với rượu vang, hoa hồng và các món ăn được trang trí tinh tế."
+                },
+                {
+                    "image": "../MENU1/IMG_8639.JPG",
+                    "name": "Menu 90S Brevilege 3",
+                    "price": 2800000,
+                    "content": "Các món ăn thanh mát như gỏi cuốn, salad trái cây và chè lạnh giúp xua tan cái nóng ngày hè."
+                },
+                {
+                    "image": "../MENU1/IMG_8640.JPG",
+                    "name": "Rượu BlueLabel",
+                    "price": 13500000,
+                    "content": "Thưởng thức hương vị độc đáo của núi rừng với thịt lợn mán, gà đồi, cơm lam và rau rừng."
+                },
+                {
+                    "image": "../MENU1/IMG_8643.JPG",
+                    "name": "Menu Private Lounge",
+                    "price": 0,
+                    "content": "Thưởng thức hương vị độc đáo của núi rừng với thịt lợn mán, gà đồi, cơm lam và rau rừng."
+                }
+            ]
+        },
+        {
+            brand: 2,
+            menu: [
+                {
+                    "image": "../MENU2/anh_1.png",
+                    "name": "Combo",
+                    "price": 0,
+                    "content": "Combo món ăn sang trọng thường kết hợp các món khai vị tinh tế, món chính cao cấp với nguyên liệu hảo hạng"
+                },
+                {
+                    "image": "../MENU2/anh_2.png",
+                    "name": "Menu nhâm nhi bò tôm ốc",
+                    "price": 0,
+                    "content": "Combo món ăn sang trọng thường kết hợp các món khai vị tinh tế, món chính cao cấp với nguyên liệu hảo hạng"
+                },
+                {
+                    "image": "../MENU2/anh_3.png",
+                    "name": "Nhâm nhi xúc xích tôm",
+                    "price": 0,
+                    "content": "Combo món ăn sang trọng thường kết hợp các món khai vị tinh tế, món chính cao cấp với nguyên liệu hảo hạng"
+                },
+                {
+                    "image": "../MENU2/anh_4.png",
+                    "name": "Nhâm nhi cá salad",
+                    "price": 0,
+                    "content": "Combo món ăn sang trọng thường kết hợp các món khai vị tinh tế, món chính cao cấp với nguyên liệu hảo hạng"
+                },
+                {
+                    "image": "../MENU2/anh_5.png",
+                    "name": "Nhâm nhi và món chay",
+                    "price": 0,
+                    "content": "Combo món ăn sang trọng thường kết hợp các món khai vị tinh tế, món chính cao cấp với nguyên liệu hảo hạng"
+                },
+                {
+                    "image": "../MENU2/anh_6.png",
+                    "name": "Menu no nê",
+                    "price": 0,
+                    "content": "Combo món ăn sang trọng thường kết hợp các món khai vị tinh tế, món chính cao cấp với nguyên liệu hảo hạng"
+                },
+                {
+                    "image": "../MENU2/anh_7.png",
+                    "name": "Menu no nê cơm",
+                    "price": 0,
+                    "content": "Combo món ăn sang trọng thường kết hợp các món khai vị tinh tế, món chính cao cấp với nguyên liệu hảo hạng"
+                },
+                {
+                    "image": "../MENU2/anh_8.png",
+                    "name": "Menu rượu nhạnh 1",
+                    "price": 0,
+                    "content": "Combo món ăn sang trọng thường kết hợp các món khai vị tinh tế, món chính cao cấp với nguyên liệu hảo hạng"
+                },
+                {
+                    "image": "../MENU2/anh_9.png",
+                    "name": "Nước uống",
+                    "price": 0,
+                    "content": "Combo món ăn sang trọng thường kết hợp các món khai vị tinh tế, món chính cao cấp với nguyên liệu hảo hạng"
+                },
+                {
+                    "image": "../MENU2/anh_10.png",
+                    "name": "Bia",
+                    "price": 0,
+                    "content": "Combo món ăn sang trọng thường kết hợp các món khai vị tinh tế, món chính cao cấp với nguyên liệu hảo hạng"
+                }
+            ]
+        },
+        {
+            brand: 3,
+            menu: [
+                {
+                    "image": "../MENU3/1.png",
+                    "name": "Combo",
+                    "price": 0,
+                    "content": "Combo món ăn sang trọng thường kết hợp các món khai vị tinh tế, món chính cao cấp với nguyên liệu hảo hạng"
+                },
+                {
+                    "image": "../MENU3/2.png",
+                    "name": "Menu nhâm nhi 1",
+                    "price": 0,
+                    "content": "Combo món ăn sang trọng thường kết hợp các món khai vị tinh tế, món chính cao cấp với nguyên liệu hảo hạng"
+                },
+                {
+                    "image": "../MENU3/3.png",
+                    "name": "Menu nhâm nhi 2",
+                    "price": 0,
+                    "content": "Combo món ăn sang trọng thường kết hợp các món khai vị tinh tế, món chính cao cấp với nguyên liệu hảo hạng"
+                },
+                {
+                    "image": "../MENU3/4.png",
+                    "name": "Menu nhâm nhi 3",
+                    "price": 0,
+                    "content": "Combo món ăn sang trọng thường kết hợp các món khai vị tinh tế, món chính cao cấp với nguyên liệu hảo hạng"
+                },
+                {
+                    "image": "../MENU3/5.png",
+                    "name": "Menu nhâm nhi 4",
+                    "price": 0,
+                    "content": "Combo món ăn sang trọng thường kết hợp các món khai vị tinh tế, món chính cao cấp với nguyên liệu hảo hạng"
+                },
+                {
+                    "image": "../MENU3/6.png",
+                    "name": "Menu no nê 1",
+                    "price": 0,
+                    "content": "Combo món ăn sang trọng thường kết hợp các món khai vị tinh tế, món chính cao cấp với nguyên liệu hảo hạng"
+                },
+                {
+                    "image": "../MENU3/7.png",
+                    "name": "Menu no nê 2",
+                    "price": 0,
+                    "content": "Combo món ăn sang trọng thường kết hợp các món khai vị tinh tế, món chính cao cấp với nguyên liệu hảo hạng"
+                },
+                {
+                    "image": "../MENU3/8.png",
+                    "name": "WINE",
+                    "price": 0,
+                    "content": "Combo món ăn sang trọng thường kết hợp các món khai vị tinh tế, món chính cao cấp với nguyên liệu hảo hạng"
+                },
+                {
+                    "image": "../MENU3/9.png",
+                    "name": "WINE - SOFT DRINK",
+                    "price": 0,
+                    "content": "Combo món ăn sang trọng thường kết hợp các món khai vị tinh tế, món chính cao cấp với nguyên liệu hảo hạng"
+                },
+                {
+                    "image": "../MENU3/10.png",
+                    "name": "BEER",
+                    "price": 0,
+                    "content": "Combo món ăn sang trọng thường kết hợp các món khai vị tinh tế, món chính cao cấp với nguyên liệu hảo hạng"
+                }
+            ]
+        }
+    ];
+
     return (
         <>
             <Sheet
@@ -111,12 +370,23 @@ export default function SheetBrandDetail({ opened, onClose }) {
 
                     <div className='fs-6 fw-bold mx-3 mt-4 ' onClick={() => { setSheetOpenebRoom(true) }}> Khám phá phòng <Icon f7="arrow_right" size="15px" className="ms-2"></Icon></div>
                     <div className='row d-flex flex-nowrap mx-2 mt-2 pb-2' style={{ overflowX: "auto", whiteSpace: "nowrap" }}>
-                        {room && room.map((diagram, key) => {
+                        {room ? room.map((diagram, key) => {
                             return (
                                 <>
                                     {
                                         diagram.rooms && diagram.rooms.map((roomItem, index) => {
-                                            const imageUrl = roomItem.images || defaultImageUrl;
+                                            // const imageUrl = roomItem.images || defaultImageUrl;
+
+                                            // --- ĐÂY LÀ THAY ĐỔI ---
+                    // 1. Định nghĩa base URL
+                    const baseUrl = "https://dev-happy.eclo.io/";
+
+                    // 2. Ghép URL nếu roomItem.images tồn tại,
+                    //    nếu không thì dùng ảnh mặc định.
+                    const imageUrl = roomItem.images 
+                                     ? `${baseUrl}${roomItem.images}` 
+                                     : defaultImageUrl;
+                    // --- KẾT THÚC THAY ĐỔI ---
                                             return (
                                                 <>
                                                     <div className='col-5 px-1'>
@@ -125,7 +395,7 @@ export default function SheetBrandDetail({ opened, onClose }) {
                                                                 <img src={imageUrl} className='w-100 rounded-3'></img>
                                                                 <div className="p-1">
                                                                     <div className='fw-bold text-pink my-1'>Phòng {roomItem.name}</div>
-                                                                    <div className='limited-lines2'>Không gian giải trí cung cấp hệ thống âm thanh, ánh sáng và màn hình để khách hát, được thiết kế với diện tích tối thiểu 20m², đảm bảo cách âm, tiêu âm tốt, và bố trí nội thất hợp lý để tạo sự thoải mái, sôi động, đáp ứng nhiều phong cách từ hiện đại, hoàng gia đến mini bar</div>
+                                                                    <div className='limited-lines2 fs-11 fst-italic'>Không gian giải trí cung cấp hệ thống âm thanh, ánh sáng và màn hình để khách hát, được thiết kế với diện tích tối thiểu 20m², đảm bảo cách âm, tiêu âm tốt, và bố trí nội thất hợp lý để tạo sự thoải mái, sôi động, đáp ứng nhiều phong cách từ hiện đại, hoàng gia đến mini bar</div>
                                                                 </div>
                                                             </div>
                                                         </Card>
@@ -136,13 +406,50 @@ export default function SheetBrandDetail({ opened, onClose }) {
                                     }
                                 </>
                             )
-                        })}
+                        }) : (
+                            <>
+                                <div className="fs-13 text-center">Không có dữ liệu</div>
+                            </>
+                        )}
 
                     </div>
 
                     <div className='fs-6 fw-bold mx-3 mt-4 ' onClick={() => { setSheetOpenebMenu(true) }}> Menu <Icon f7="arrow_right" size="15px" className="ms-2"></Icon></div>
                     <div className='row d-flex flex-nowrap mx-2 mt-2 pb-2' style={{ overflowX: "auto", whiteSpace: "nowrap" }}>
-                        {menu && menu.map((item) => {
+
+                        {data && data.map((data) => {
+                            const targetBrand = localStorage.getItem("happyCorp_brand");
+                            if (data.brand == targetBrand) {
+                                return data.menu.map((menuItem, index) => {
+                                    return (
+                                        <div className='col-5 px-1'>
+                                            <Card className='m-0 border border-1 p-0 fs-13'>
+                                                <div className="">
+                                                    <img src={menuItem.image && menuItem.image.trim() !== "" ? `${menuItem.image}` : "../image/no-image.jpg"} className='w-100 rounded-3'></img>
+                                                    <div className="p-1">
+                                                        <div className='fw-bold text-pink my-1  text-wrap'>{menuItem.name}</div>
+                                                        {/* {menuItem.price > 0 ? (
+                                                            <div className="fw-bold mb-1 fs-13">
+                                                                {formatPrice(menuItem.price)}
+                                                                <span className="fs-12 text-muted">đ</span>
+                                                            </div>
+                                                        ) : (
+                                                            <>
+                                                                <div className="fw-bold py-2 fs-13">
+
+                                                                </div>
+                                                            </>
+                                                        )} */}
+                                                        <div className='limited-lines2 fs-11 fst-italic'>Combo món ăn sang trọng thường kết hợp các món khai vị tinh tế, món chính cao cấp với nguyên liệu hảo hạng</div>
+                                                    </div>
+                                                </div>
+                                            </Card>
+                                        </div>
+                                    );
+                                });
+                            }
+                        })}
+                        {/* {menu ? menu.map((item) => {
                             return (
                                 <div className='col-5 px-1'>
                                     <Card className='m-0 border border-1 p-0 fs-13'>
@@ -163,7 +470,11 @@ export default function SheetBrandDetail({ opened, onClose }) {
                                 </div>
 
                             )
-                        })}
+                        }) : (
+                            <>
+                                <div className="fs-13 text-center">Không có dữ liệu</div>
+                            </>
+                        )} */}
                     </div>
 
                     <div className='fs-6 fw-bold mx-3 mt-4 '> Mood chơi khách/ Social post <Icon f7="arrow_right" size="15px" className="ms-2"></Icon></div>
